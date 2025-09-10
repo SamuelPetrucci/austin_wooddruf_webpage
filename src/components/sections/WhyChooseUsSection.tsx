@@ -63,7 +63,7 @@ export default function WhyChooseUsSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Proven Results</h3>
               <p className="text-gray-600">
-                Over 490 active clients and 600+ families helped in the last year and a half. I&apos;m always there to provide help and support when you need it most.
+                Over 1207+ active clients and 1387+ families helped in the last year and a half. I&apos;m always there to provide help and support when you need it most.
               </p>
             </div>
           </AnimatedSection>

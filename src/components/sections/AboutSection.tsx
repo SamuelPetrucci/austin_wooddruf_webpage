@@ -35,11 +35,11 @@ export default function AboutSection() {
                   <div className="text-sm font-medium text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-3xl font-bold text-green-600 mb-2">600+</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">1387+</div>
                   <div className="text-sm font-medium text-gray-600">Families Helped</div>
                 </div>
                 <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">490+</div>
+                  <div className="text-3xl font-bold text-purple-600 mb-2">1207+</div>
                   <div className="text-sm font-medium text-gray-600">Active Clients</div>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function AboutSection() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">My Journey</h3>
                     <p className="text-gray-700">
-                      With over 490 active clients and 600+ families helped in just 2 years, 
+                      With over 1207+ active clients and 1387+ families helped in just 2 years, 
                       I&apos;ve discovered my true passion for protecting families and their futures.
                     </p>
                   </div>

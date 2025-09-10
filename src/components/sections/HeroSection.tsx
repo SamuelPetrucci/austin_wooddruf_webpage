@@ -24,7 +24,7 @@ export default function HeroSection() {
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Comprehensive life and health insurance solutions tailored to your unique needs. 
                 Get the protection you deserve with personalized coverage from Jordan Smith, 
-                your dedicated insurance professional with over 490 active clients and 600+ families served.
+                your dedicated insurance professional with over 1207+ active clients and 1387+ families served.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -51,11 +51,11 @@ export default function HeroSection() {
                   <h3 className="text-2xl font-bold text-gray-900">Trusted Protection</h3>
                   <div className="flex justify-center space-x-8">
                     <div className="text-center transform hover:scale-110 transition-transform duration-300">
-                      <div className="text-3xl font-bold text-blue-600">490+</div>
+                      <div className="text-3xl font-bold text-blue-600">1207+</div>
                       <div className="text-sm text-gray-600">Active Clients</div>
                     </div>
                     <div className="text-center transform hover:scale-110 transition-transform duration-300">
-                      <div className="text-3xl font-bold text-blue-600">600+</div>
+                      <div className="text-3xl font-bold text-blue-600">1387+</div>
                       <div className="text-sm text-gray-600">Families Helped</div>
                     </div>
                     <div className="text-center transform hover:scale-110 transition-transform duration-300">
