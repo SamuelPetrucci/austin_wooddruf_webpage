@@ -23,8 +23,8 @@ export default function HeroSection() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Comprehensive life and health insurance solutions tailored to your unique needs. 
-                  Get the protection you deserve with personalized coverage from Jordan Mykel Smith, 
-                  your dedicated insurance professional with over 490 active clients and 600+ families served.
+                Get the protection you deserve with personalized coverage from Jordan Smith, 
+                your dedicated insurance professional with over 490 active clients and 600+ families served.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">

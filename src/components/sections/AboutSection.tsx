@@ -8,7 +8,7 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Jordan Mykel Smith</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Meet Jordan Smith</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your dedicated insurance professional with a passion for protecting families and their futures
             </p>
@@ -22,7 +22,7 @@ export default function AboutSection() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-20" style={{ animation: 'pulse 5s ease-in-out infinite' }}></div>
                 <Image
                   src="/jordan-headshot.png"
-                  alt="Jordan Mykel Smith - Insurance Professional"
+                  alt="Jordan Smith - Insurance Professional"
                   width={500}
                   height={500}
                   className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
