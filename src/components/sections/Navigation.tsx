@@ -1,14 +1,25 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const isQuotePage = pathname === '/quote';
 
   const scrollToSection = (sectionId: string) => {
+    if (isQuotePage) {
+      // If on quote page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If on home page, scroll to section
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -19,7 +30,16 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-600">Jordan Health Solutions</h1>
+              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+                <Image
+                  src="/logo.png"
+                  alt="Jordan Health Solutions"
+                  width={220}
+                  height={55}
+                  className="object-contain"
+                  priority
+                />
+              </Link>
             </div>
           </div>
           
@@ -50,12 +70,12 @@ export default function Navigation() {
               >
                 Carriers
               </button>
-              <button 
-                onClick={() => scrollToSection('quote')} 
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              <Link 
+                href="/quote"
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
               >
                 Get Quote
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -104,12 +124,13 @@ export default function Navigation() {
               >
                 Carriers
               </button>
-              <button 
-                onClick={() => scrollToSection('quote')} 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+              <Link 
+                href="/quote"
+                className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium w-full text-center hover:bg-blue-700 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Get Quote
-              </button>
+              </Link>
             </div>
           </div>
         )}

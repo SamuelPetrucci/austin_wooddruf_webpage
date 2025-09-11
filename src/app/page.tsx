@@ -5,6 +5,7 @@ import InsuranceCarriersBanner from '@/components/sections/InsuranceCarriersWhee
 import WhyChooseUsSection from '@/components/sections/WhyChooseUsSection';
 import AboutSection from '@/components/sections/AboutSection';
 import StatesSection from '@/components/sections/StatesSection';
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import QuoteAndBookingSection from '@/components/sections/QuoteAndBookingSection';
 import Footer from '@/components/sections/Footer';
 
@@ -18,6 +19,7 @@ export default function HomePage() {
       <WhyChooseUsSection />
       <AboutSection />
       <StatesSection />
+      <TestimonialsSection />
       <QuoteAndBookingSection />
       <Footer />
     </div>
