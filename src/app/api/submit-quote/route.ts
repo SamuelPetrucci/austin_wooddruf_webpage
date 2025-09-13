@@ -26,7 +26,7 @@ interface QuoteFormData {
   }>;
   
   // Step 5: Budget & Coverage
-  monthlyBudget: string;
+  desiredBudget: string;
   coverageType: string;
   additionalInfo: string;
   
@@ -37,14 +37,30 @@ interface QuoteFormData {
 
 export async function POST(request: NextRequest) {
   try {
-    const formData: QuoteFormData = await request.json();
+    console.log('🚀 API Route called - submit-quote');
+    
+    const body = await request.text();
+    console.log('📦 Raw request body:', body);
+    
+    let formData: QuoteFormData;
+    try {
+      formData = JSON.parse(body);
+    } catch (parseError) {
+      console.error('❌ JSON Parse Error:', parseError);
+      return NextResponse.json(
+        { error: 'Invalid JSON in request body' },
+        { status: 400 }
+      );
+    }
+    
     console.log('📝 Form submission received:', JSON.stringify(formData, null, 2));
 
     // Validate required fields
-    const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'zipCode', 'dateOfBirth', 'annualIncome', 'healthStatus', 'monthlyBudget', 'coverageType'];
+    const requiredFields = ['firstName', 'lastName', 'email', 'phone', 'zipCode', 'dateOfBirth', 'annualIncome', 'healthStatus', 'desiredBudget', 'coverageType'];
     const missingFields = requiredFields.filter(field => !formData[field as keyof QuoteFormData]);
     
     if (missingFields.length > 0) {
+      console.error('❌ Missing required fields:', missingFields);
       return NextResponse.json(
         { error: `Missing required fields: ${missingFields.join(', ')}` },
         { status: 400 }
@@ -130,7 +146,7 @@ async function saveToSupabase(formData: QuoteFormData) {
     health_status: formData.healthStatus,
     medications: formData.medications || 'None',
     dependents: dependentsText,
-    monthly_budget: formData.monthlyBudget,
+    monthly_budget: formData.desiredBudget,
     coverage_type: formData.coverageType,
     additional_info: formData.additionalInfo || 'None',
     // referred_by: formData.referredBy || false,
@@ -198,7 +214,7 @@ async function sendOwnerNotification(formData: QuoteFormData) {
         <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #16a34a;">
           <h2 style="color: #16a34a; margin: 0 0 15px 0;">Financial & Coverage Details</h2>
           <p style="margin: 5px 0;"><strong>Annual Income:</strong> ${formData.annualIncome}</p>
-          <p style="margin: 5px 0;"><strong>Monthly Budget:</strong> ${formData.monthlyBudget}</p>
+          <p style="margin: 5px 0;"><strong>Monthly Budget:</strong> ${formData.desiredBudget}</p>
           <p style="margin: 5px 0;"><strong>Coverage Type:</strong> ${formData.coverageType}</p>
         </div>
 
@@ -248,7 +264,7 @@ Date of Birth: ${formData.dateOfBirth}
 
 FINANCIAL & COVERAGE DETAILS:
 Annual Income: ${formData.annualIncome}
-Monthly Budget: ${formData.monthlyBudget}
+Monthly Budget: ${formData.desiredBudget}
 Coverage Type: ${formData.coverageType}
 
 HEALTH INFORMATION:
