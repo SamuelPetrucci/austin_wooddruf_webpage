@@ -40,7 +40,7 @@ export default function QuoteAndBookingSection() {
         
         <AnimatedSection delay={200}>
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:shadow-3xl transition-all duration-500">
-            <div className="p-8">
+          <div className="p-8">
               <div className="animate-fadeIn">
                 <div className="text-center mb-6">
                   <CalendarDaysIcon className="h-16 w-16 text-blue-600 mx-auto mb-4 animate-pulse" />
@@ -76,7 +76,7 @@ export default function QuoteAndBookingSection() {
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
           </div>
         </AnimatedSection>
       </div>

@@ -1,81 +1,25 @@
-# Jordan Health Solutions Website
+# JS Health Solutions Website
 
-A modern, professional website for Jordan Smith's insurance services, built with Next.js 15, TypeScript, and Tailwind CSS.
+A professional insurance website for Jordan Smith's health insurance services, built with Next.js and featuring a comprehensive quote form with email notifications.
 
-## 🚀 Live Demo
+## Features
 
-[Deploy to Vercel](https://vercel.com) - Ready for production deployment
+- **Responsive Design**: Modern, mobile-friendly interface
+- **Quote Form**: Multi-step form for collecting customer information
+- **Email Notifications**: Automated emails to both customer and business owner
+- **Admin Dashboard**: Premium feature for managing submissions (Supabase)
+- **Professional Branding**: Clean design with company logo and colors
 
-## 📋 Features
+## Tech Stack
 
-### ✨ Modern Design
-- **Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
-- **Smooth Animations** - Professional fade-in transitions and hover effects
-- **Custom Favicon** - Shield with check mark branding
-- **Gradient Backgrounds** - Modern visual appeal
+- **Framework**: Next.js 14 with TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Heroicons
+- **Email**: Nodemailer with Gmail SMTP
+- **Database**: Supabase (premium feature)
+- **Deployment**: Vercel
 
-### 🎯 Key Sections
-- **Hero Section** - Compelling call-to-action with Jordan's stats
-- **Services** - Life, Health, and Additional Protection insurance
-- **Carriers Banner** - Animated scrolling display of insurance partners
-- **Why Choose Us** - Jordan's unique value propositions
-- **About Jordan** - Personal story and professional background
-- **States Served** - Interactive display of 30 licensed states
-- **Quote & Booking** - Tabbed interface for contact form and Calendly
-- **Footer** - Contact information and quick links
-
-### 🛠 Technical Features
-- **Next.js 15** with App Router
-- **TypeScript** for type safety
-- **Tailwind CSS** for utility-first styling
-- **Intersection Observer** for scroll animations
-- **Custom Components** with reusable animations
-- **SEO Optimized** with proper meta tags
-- **Performance Optimized** with Next.js Image component
-
-## 🏗 Project Structure
-
-```
-jordan_smith_webpage/
-├── public/
-│   ├── favicon.svg          # Custom shield favicon
-│   ├── jordan-headshot.png  # Professional headshot
-│   └── logos/               # Insurance carrier logos
-│       ├── aetna.webp
-│       ├── bcbs.webp
-│       ├── allstate.webp
-│       ├── cigna.avif
-│       └── anthem.avif
-├── src/
-│   ├── app/
-│   │   ├── globals.css      # Global styles and animations
-│   │   ├── layout.tsx       # Root layout with metadata
-│   │   └── page.tsx         # Main page component
-│   └── components/
-│       ├── AnimatedSection.tsx    # Reusable animation wrapper
-│       └── sections/
-│           ├── Navigation.tsx           # Header navigation
-│           ├── HeroSection.tsx          # Hero with CTA buttons
-│           ├── ServicesSection.tsx      # Insurance services
-│           ├── InsuranceCarriersWheel.tsx # Animated carrier banner
-│           ├── WhyChooseUsSection.tsx   # Value propositions
-│           ├── AboutSection.tsx         # Jordan's story
-│           ├── StatesSection.tsx        # 30 states display
-│           ├── QuoteAndBookingSection.tsx # Contact & booking
-│           └── Footer.tsx               # Footer with contact info
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
+## Quick Start
 
 1. **Clone the repository**
    ```bash
@@ -88,94 +32,111 @@ jordan_smith_webpage/
    npm install
    ```
 
-3. **Run the development server**
+3. **Set up environment variables**
+   Create a `.env.local` file with the following variables:
+   ```bash
+   # Email Configuration (Required)
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_USER=your-email@gmail.com
+   SMTP_PASS=your-gmail-app-password
+   SITE_OWNER_EMAIL=insuredwithjordan@gmail.com
+
+   # Next.js Configuration
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+
+   # Premium Features (Optional - Supabase)
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
+   ```
+
+4. **Run the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-### Available Scripts
+## Email Setup
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npx tsc --noEmit` - Type check without building
+### Gmail Configuration
+1. Enable 2-Factor Authentication on your Gmail account
+2. Generate an App Password:
+   - Go to Google Account settings
+   - Security → 2-Step Verification → App passwords
+   - Generate a password for "Mail"
+   - Use this password in `SMTP_PASS`
 
-## 🎨 Customization
+### Email Features
+- **Customer Confirmation**: Automated thank you email with next steps
+- **Owner Notification**: Detailed email with all customer information
+- **Professional Design**: Branded emails with company logo
 
-### Adding New Sections
-1. Create component in `src/components/sections/`
-2. Import and add to `src/app/page.tsx`
-3. Add navigation link in `Navigation.tsx`
+## Deployment
 
-### Updating Content
-- **Jordan's Info**: Update `AboutSection.tsx`
-- **Services**: Modify `ServicesSection.tsx`
-- **States**: Edit the `states` array in `StatesSection.tsx`
-- **Contact Info**: Update `Footer.tsx` and `QuoteAndBookingSection.tsx`
+### Vercel Deployment
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add the environment variables in Vercel dashboard
+4. Deploy
 
-### Styling
-- **Colors**: Modify Tailwind classes or update `tailwind.config.js`
-- **Animations**: Adjust delays in `AnimatedSection.tsx` or add custom CSS
-- **Layout**: Update grid classes and spacing utilities
+### Required Environment Variables for Vercel
+```bash
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=insuredwithjordan@gmail.com
+SMTP_PASS=your-gmail-app-password
+SITE_OWNER_EMAIL=insuredwithjordan@gmail.com
+NEXT_PUBLIC_SITE_URL=https://your-domain.vercel.app
+```
 
-## 📱 Responsive Design
+## Project Structure
 
-The website is fully responsive with breakpoints:
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px  
-- **Desktop**: > 1024px
+```
+src/
+├── app/
+│   ├── api/
+│   │   └── submit-quote/          # Form submission endpoint
+│   ├── admin/                     # Admin dashboard
+│   ├── quote/                     # Quote form page
+│   └── page.tsx                   # Homepage
+├── components/
+│   ├── sections/                  # Page sections
+│   └── ui/                        # Reusable UI components
+└── lib/                          # Utility functions
+```
 
-## 🔧 Technical Details
+## Features Overview
 
-### Animation System
-- **Intersection Observer** for scroll-triggered animations
-- **Staggered Delays** for sequential element reveals
-- **Hover Effects** with transform and scale
-- **Smooth Scrolling** for navigation
+### Quote Form
+- Multi-step form with validation
+- Customer information collection
+- Health and financial details
+- Dependent information
+- Referral tracking
+- Privacy assurance
 
-### Performance
-- **Next.js Image Optimization** for all images
-- **Static Generation** for fast loading
-- **Code Splitting** for optimal bundle sizes
-- **SEO Optimization** with proper meta tags
+### Email System
+- Professional email templates
+- Branded design with company colors
+- Anti-spam headers for better deliverability
+- Confirmation and notification emails
 
-### Browser Support
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+### Admin Dashboard (Premium)
+- Secure login system
+- View all form submissions
+- Detailed customer information
+- Professional interface
 
-## 🚀 Deployment
+## Contact
 
-### Vercel (Recommended)
-1. Push code to GitHub
-2. Connect repository to Vercel
-3. Deploy automatically on push
+**Jordan Smith**  
+Phone: (860) 941-7770  
+Email: insuredwithjordan@gmail.com  
+Service Area: Tampa, FL (Serving 30 States)
 
-### Other Platforms
-- **Netlify**: Compatible with static export
-- **AWS S3**: Upload build files
-- **Custom Server**: Use `npm run build` and `npm run start`
+## License
 
-## 📞 Contact Information
-
-**Jordan Smith - Insurance Professional**
-- Phone: (860) 941-7770
-- Email: insuredwithjordann@gmail.com
-- Service Area: Tampa, FL (Serving 30 States)
-
-## 📄 License
-
-This project is proprietary to Jordan Health Solutions.
-
-## 🤝 Contributing
-
-For updates or modifications, please contact the development team.
-
----
-
-**Built with ❤️ for Jordan Health Solutions**
+© 2025 JS Health Solutions. All rights reserved.

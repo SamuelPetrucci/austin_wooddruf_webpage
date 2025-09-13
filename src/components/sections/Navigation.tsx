@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
@@ -26,11 +27,21 @@ export default function Navigation() {
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-                <div className="text-2xl font-bold text-blue-600">
+              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity space-x-4">
+                {/* Company Logo */}
+                <Image
+                  src="/logoimg.png"
+                  alt="Company Logo"
+                  width={80}
+                  height={80}
+                  className="h-16 w-16 object-contain"
+                  priority
+                />
+                {/* Header Text - CSS Version for Perfect Clarity */}
+                <div className="text-2xl md:text-3xl font-bold text-slate-800 whitespace-nowrap">
                   JS Health Solutions
                 </div>
               </Link>

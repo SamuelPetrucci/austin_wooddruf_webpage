@@ -233,7 +233,7 @@ export default function QuoteSection() {
                 disabled={isSubmitting}
                 className="bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Submitting...' : 'Get My Free Quote'}
+                {isSubmitting ? 'Submitting...' : 'Get My Quick Quote'}
               </button>
             </div>
           </form>

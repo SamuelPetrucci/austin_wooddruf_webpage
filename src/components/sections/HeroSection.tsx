@@ -13,7 +13,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="pt-16 relative overflow-hidden">
+    <section id="hero" className="pt-20 relative overflow-hidden">
       {/* Multi-layered Background */}
       <div className="absolute inset-0">
         {/* Base gradient with animation */}
@@ -79,30 +79,30 @@ export default function HeroSection() {
           <AnimatedSection delay={0}>
             <div className="space-y-8">
               <div className="space-y-6">
-                <div className="space-y-4">
-                  <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-                    Protect What Matters Most
-                  </h1>
-                  <p className="text-xl text-gray-600 leading-relaxed">
-                    Comprehensive life and health insurance solutions tailored to your unique needs. 
-                  Get the protection you deserve with personalized coverage from Jordan Smith, 
-                  your dedicated insurance professional with over 1207+ active clients and 1387+ families served.
-                  </p>
-                </div>
+              <div className="space-y-4">
+                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                  Protect What Matters Most
+                </h1>
+                <p className="text-xl text-gray-600 leading-relaxed">
+                  Comprehensive life and health insurance solutions tailored to your unique needs. 
+                Get the protection you deserve with personalized coverage from Jordan Smith, 
+                your dedicated insurance professional with over 1207+ active clients and 1387+ families served.
+                </p>
+              </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     href="/quote"
                     className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
-                  >
-                    Get Your Free Quote
+                >
+                  Get Your Quick Quote
                   </Link>
-                  <button 
-                    onClick={() => scrollToSection('quote')}
-                    className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
-                  >
-                    Schedule a Meeting
-                  </button>
+                <button 
+                  onClick={() => scrollToSection('quote')}
+                  className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  Schedule a Meeting
+                </button>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ export default function HeroSection() {
                 
                 <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition-all duration-300 border border-white/20">
                   <div className="text-center space-y-4">
-                    <div className="relative">
+            <div className="relative">
                     <ShieldCheckIcon className="h-12 w-12 text-blue-600 mx-auto animate-pulse" />
                       <div className="absolute inset-0 h-12 w-12 bg-blue-100 rounded-full mx-auto animate-ping opacity-20"></div>
                     </div>
@@ -164,7 +164,7 @@ export default function HeroSection() {
                 <div className="absolute -bottom-2 -left-2 w-20 h-20 bg-gradient-to-tr from-indigo-400/20 to-blue-400/20 rounded-full blur-xl"></div>
                 
                 <div className="relative text-center space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">Get Your Free Quote Now!</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">Get Your Quick Quote Now!</h3>
                   <p className="text-gray-600">Complete our simple form in just 2 minutes</p>
                   <Link 
                     href="/quote"
