@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   title: "JS Health Solutions - Insurance Protection You Can Trust",
   description: "Comprehensive life and health insurance solutions from Jordan Smith. Serving 30 states with personalized coverage and dedicated support.",
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.ico',
+    icon: '/favicon.ico',
   },
 };
 
