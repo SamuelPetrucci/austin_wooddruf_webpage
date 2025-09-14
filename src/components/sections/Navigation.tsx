@@ -41,7 +41,7 @@ export default function Navigation() {
                   priority
                 />
                 {/* Header Text - CSS Version for Perfect Clarity */}
-                <div className="text-2xl md:text-3xl font-bold text-slate-800 whitespace-nowrap">
+                <div className="text-2xl md:text-3xl font-bold text-slate-900 whitespace-nowrap">
                   JS Health Solutions
                 </div>
               </Link>
@@ -50,34 +50,34 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-6">
               <button 
                 onClick={() => scrollToSection('hero')} 
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-slate-900 hover:text-blue-800 px-4 py-3 rounded-lg text-base font-semibold transition-all duration-300 hover:bg-blue-50"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')} 
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-slate-900 hover:text-blue-800 px-4 py-3 rounded-lg text-base font-semibold transition-all duration-300 hover:bg-blue-50"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('services')} 
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-slate-900 hover:text-blue-800 px-4 py-3 rounded-lg text-base font-semibold transition-all duration-300 hover:bg-blue-50"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('carriers')} 
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="text-slate-900 hover:text-blue-800 px-4 py-3 rounded-lg text-base font-semibold transition-all duration-300 hover:bg-blue-50"
               >
                 Carriers
               </button>
               <Link 
                 href="/quote"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
+                className="bg-blue-800 text-white px-6 py-3 rounded-lg text-base font-bold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 Get Quote
               </Link>
@@ -88,7 +88,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-slate-900 hover:text-blue-800 focus:outline-none focus:text-blue-800"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -107,31 +107,31 @@ export default function Navigation() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               <button 
                 onClick={() => scrollToSection('hero')} 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                className="text-slate-900 hover:text-blue-800 hover:bg-blue-50 block px-4 py-3 rounded-lg text-base font-semibold w-full text-left transition-all duration-300"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')} 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                className="text-slate-900 hover:text-blue-800 hover:bg-blue-50 block px-4 py-3 rounded-lg text-base font-semibold w-full text-left transition-all duration-300"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('services')} 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                className="text-slate-900 hover:text-blue-800 hover:bg-blue-50 block px-4 py-3 rounded-lg text-base font-semibold w-full text-left transition-all duration-300"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('carriers')} 
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium w-full text-left"
+                className="text-slate-900 hover:text-blue-800 hover:bg-blue-50 block px-4 py-3 rounded-lg text-base font-semibold w-full text-left transition-all duration-300"
               >
                 Carriers
               </button>
               <Link 
                 href="/quote"
-                className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium w-full text-center hover:bg-blue-700 transition-colors"
+                className="bg-blue-800 text-white block px-4 py-3 rounded-lg text-base font-bold w-full text-center hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Get Quote

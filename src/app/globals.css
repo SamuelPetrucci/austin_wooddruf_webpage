@@ -1,8 +1,40 @@
 @import "tailwindcss";
 
 :root {
+  /* Professional Color Palette */
+  --primary-blue: #1e3a8a;
+  --primary-blue-light: #3b82f6;
+  --primary-blue-dark: #1e40af;
+  --secondary-blue: #1e40af;
+  --accent-blue: #2563eb;
+  
+  /* Neutral Grays */
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-300: #d1d5db;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
+  
+  /* Background Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --background-secondary: #f8fafc;
+  --background-accent: #f1f5f9;
+  
+  /* Text Colors */
+  --foreground: #111827;
+  --foreground-secondary: #374151;
+  --foreground-muted: #6b7280;
+  
+  /* Status Colors */
+  --success: #059669;
+  --success-light: #d1fae5;
+  --warning: #d97706;
+  --warning-light: #fef3c7;
 }
 
 @theme inline {
@@ -14,15 +46,53 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --background-secondary: #1e293b;
+    --background-accent: #334155;
+    --foreground: #f1f5f9;
+    --foreground-secondary: #cbd5e1;
+    --foreground-muted: #94a3b8;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Professional Utility Classes */
+.text-primary {
+  color: var(--primary-blue);
+}
+
+.text-secondary {
+  color: var(--foreground-secondary);
+}
+
+.text-muted {
+  color: var(--foreground-muted);
+}
+
+.bg-primary {
+  background-color: var(--primary-blue);
+}
+
+.bg-secondary {
+  background-color: var(--background-secondary);
+}
+
+.bg-accent {
+  background-color: var(--background-accent);
+}
+
+.border-primary {
+  border-color: var(--primary-blue);
+}
+
+.border-secondary {
+  border-color: var(--gray-200);
 }
 
 /* Custom animations */
@@ -39,10 +109,10 @@ body {
 
 @keyframes float {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-20px) rotate(5deg);
+    transform: translateY(-8px);
   }
 }
 
@@ -51,13 +121,13 @@ body {
     transform: translateX(0px) translateY(0px);
   }
   25% {
-    transform: translateX(10px) translateY(-10px);
+    transform: translateX(4px) translateY(-4px);
   }
   50% {
-    transform: translateX(-5px) translateY(-20px);
+    transform: translateX(-2px) translateY(-8px);
   }
   75% {
-    transform: translateX(-10px) translateY(-5px);
+    transform: translateX(-4px) translateY(-2px);
   }
   100% {
     transform: translateX(0px) translateY(0px);
@@ -82,6 +152,67 @@ body {
   }
 }
 
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(60px, 60px);
+  }
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes gradientWave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translate(50px, -30px) scale(1.3);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(100px, -50px) scale(1.5);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(150px, -20px) scale(1.2);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(200px, 0) scale(1);
+    opacity: 0.2;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(30, 58, 138, 0.2);
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-out;
 }
@@ -103,6 +234,102 @@ body {
 .animate-gradient {
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
+}
+
+.animate-grid {
+  animation: gridMove 15s linear infinite;
+}
+
+.animate-icon-float {
+  animation: iconFloat 6s ease-in-out infinite;
+}
+
+.animate-gradient-wave {
+  background-size: 400% 400%;
+  animation: gradientWave 8s ease infinite;
+}
+
+.animate-particle {
+  animation: particleMove 10s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(30, 58, 138, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 58, 138, 0.15) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Mesh gradient background */
+.bg-mesh-gradient {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(30, 58, 138, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(71, 85, 105, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(30, 58, 138, 0.15) 0%, transparent 50%);
+}
+
+/* Animation classes with specific durations and delays */
+.animate-drift-8s {
+  animation: drift 8s ease-in-out infinite;
+}
+
+.animate-float-delay-2s {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-drift-10s-delay-3s {
+  animation: drift 10s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-particle-delay-1s {
+  animation: particleMove 10s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-particle-delay-2s {
+  animation: particleMove 10s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-particle-delay-3s {
+  animation: particleMove 10s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-particle-delay-4s {
+  animation: particleMove 10s ease-in-out infinite;
+  animation-delay: 4s;
+}
+
+.animate-particle-delay-5s {
+  animation: particleMove 10s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+.animate-float-delay-1s-12s {
+  animation: float 12s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-drift-14s-delay-3s {
+  animation: drift 14s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
+.animate-pulse-8s {
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.animate-pulse-12s-delay-2s {
+  animation: pulse 12s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
 /* Custom gradient utilities */

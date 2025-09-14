@@ -20,8 +20,8 @@ export default function InsuranceCarriersBanner() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-blue-600 mb-2">Carriers We Shop With</h2>
-            <div className="w-2 h-2 bg-red-500 rounded-full mx-auto mb-4 animate-pulse"></div>
+            <h2 className="text-3xl font-bold text-blue-800 mb-2">Carriers We Shop With</h2>
+            <div className="w-2 h-2 bg-blue-800 rounded-full mx-auto mb-4"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               We have access to top-rated insurance carriers to find you the best coverage at the most competitive rates
             </p>
@@ -66,17 +66,17 @@ export default function InsuranceCarriersBanner() {
         <AnimatedSection delay={600}>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">32+</div>
+            <div className="text-3xl font-bold text-blue-800 mb-2">32+</div>
             <div className="text-gray-600 font-medium">Carriers We Shop With</div>
             <div className="text-sm text-gray-500">Access to leading insurance providers</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">100%</div>
+            <div className="text-3xl font-bold text-blue-800 mb-2">100%</div>
             <div className="text-gray-600 font-medium">Coverage Options</div>
             <div className="text-sm text-gray-500">Life, health, and specialty insurance</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+            <div className="text-3xl font-bold text-blue-800 mb-2">24/7</div>
             <div className="text-gray-600 font-medium">Support Available</div>
             <div className="text-sm text-gray-500">Personal connection to all carriers</div>
           </div>

@@ -23,7 +23,7 @@ export default function WhyChooseUsSection() {
           <AnimatedSection delay={200}>
             <div className="text-center transform hover:scale-105 transition-all duration-300">
               <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <ClockIcon className="h-8 w-8 text-blue-600" />
+                <ClockIcon className="h-8 w-8 text-blue-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Lightning Fast Response</h3>
               <p className="text-gray-600">
@@ -34,8 +34,8 @@ export default function WhyChooseUsSection() {
           
           <AnimatedSection delay={400}>
             <div className="text-center transform hover:scale-105 transition-all duration-300">
-              <div className="bg-green-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <ShieldCheckIcon className="h-8 w-8 text-green-600" />
+              <div className="bg-slate-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <ShieldCheckIcon className="h-8 w-8 text-blue-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Deep Coverage Knowledge</h3>
               <p className="text-gray-600">
@@ -46,8 +46,8 @@ export default function WhyChooseUsSection() {
           
           <AnimatedSection delay={600}>
             <div className="text-center transform hover:scale-105 transition-all duration-300">
-              <div className="bg-purple-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <UserGroupIcon className="h-8 w-8 text-purple-600" />
+              <div className="bg-blue-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <UserGroupIcon className="h-8 w-8 text-blue-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Personal Connection</h3>
               <p className="text-gray-600">
@@ -58,8 +58,8 @@ export default function WhyChooseUsSection() {
           
           <AnimatedSection delay={800}>
             <div className="text-center transform hover:scale-105 transition-all duration-300">
-              <div className="bg-yellow-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <StarIcon className="h-8 w-8 text-yellow-600" />
+              <div className="bg-slate-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <StarIcon className="h-8 w-8 text-blue-800" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Proven Results</h3>
               <p className="text-gray-600">

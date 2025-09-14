@@ -130,10 +130,10 @@ async function saveToSupabase(formData: QuoteFormData) {
       }
     }
   );
-
-  const dependentsText = formData.dependents.length > 0 
-    ? formData.dependents.map(dep => `${dep.name} (${dep.relationship}, DOB: ${dep.dateOfBirth})`).join('; ')
-    : 'None';
+      
+      const dependentsText = formData.dependents.length > 0 
+        ? formData.dependents.map(dep => `${dep.name} (${dep.relationship}, DOB: ${dep.dateOfBirth})`).join('; ')
+        : 'None';
 
   const submissionData = {
     first_name: formData.firstName,
@@ -174,15 +174,15 @@ async function sendOwnerNotification(formData: QuoteFormData) {
     return;
   }
 
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST || 'smtp.gmail.com',
-    port: parseInt(process.env.SMTP_PORT || '587'),
-    secure: false,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST || 'smtp.gmail.com',
+      port: parseInt(process.env.SMTP_PORT || '587'),
+      secure: false,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
 
   const dependentsText = formData.dependents.length > 0 
     ? formData.dependents.map(dep => `${dep.name} (${dep.relationship}, DOB: ${dep.dateOfBirth})`).join('\n')
@@ -230,8 +230,8 @@ async function sendOwnerNotification(formData: QuoteFormData) {
         </div>
 
         ${formData.additionalInfo ? `
-        <div style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #64748b;">
-          <h2 style="color: #64748b; margin: 0 0 10px 0;">Additional Information</h2>
+          <div style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #64748b;">
+            <h2 style="color: #64748b; margin: 0 0 10px 0;">Additional Information</h2>
           <p style="margin: 0; white-space: pre-wrap;">${formData.additionalInfo}</p>
         </div>
       ` : ''}
@@ -240,8 +240,8 @@ async function sendOwnerNotification(formData: QuoteFormData) {
         <div style="background: #fef3c7; padding: 20px; border-radius: 8px; margin-bottom: 25px; border-left: 4px solid #d97706;">
           <h2 style="color: #d97706; margin: 0 0 10px 0;">Referral Information</h2>
           <p style="margin: 0;"><strong>Referred by:</strong> ${formData.referralName}</p>
-        </div>
-      ` : ''}
+          </div>
+        ` : ''}
 
         <div style="background: #2563eb; color: white; padding: 20px; border-radius: 8px; text-align: center;">
           <h3 style="margin: 0 0 10px 0;">Next Steps</h3>

@@ -142,7 +142,7 @@ export default function TestimonialsSection() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">
@@ -158,10 +158,10 @@ export default function TestimonialsSection() {
         <AnimatedSection delay={200}>
           <div className="relative">
             {/* Main Testimonial Card */}
-            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto relative overflow-hidden">
+            <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto relative overflow-hidden border border-gray-100">
               {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100/50 to-purple-100/50 rounded-full blur-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-indigo-100/50 to-blue-100/50 rounded-full blur-2xl"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100/30 to-slate-100/30 rounded-full blur-2xl"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-slate-100/30 to-blue-100/30 rounded-full blur-2xl"></div>
               
               <div className="relative z-10">
                 {/* Rating Stars */}
@@ -169,7 +169,7 @@ export default function TestimonialsSection() {
                   {[...Array(5)].map((_, i) => (
                     <StarIcon
                       key={i}
-                      className="h-6 w-6 text-yellow-400"
+                      className="h-6 w-6 text-yellow-500"
                     />
                   ))}
                 </div>
@@ -182,7 +182,7 @@ export default function TestimonialsSection() {
                 {/* Client Info */}
                 <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
                   {/* Avatar */}
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-800 to-blue-900 rounded-full flex items-center justify-center text-white font-bold text-xl">
                     {currentTestimonial.avatar}
                   </div>
                   
@@ -217,7 +217,7 @@ export default function TestimonialsSection() {
                     onClick={() => goToSlide(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentIndex
-                        ? 'bg-blue-600 scale-125'
+                        ? 'bg-blue-800 scale-125'
                         : 'bg-gray-300 hover:bg-gray-400'
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
@@ -250,15 +250,15 @@ export default function TestimonialsSection() {
         <AnimatedSection delay={400}>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">4.9/5</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">4.9/5</div>
               <div className="text-gray-600">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">98%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">1,200+</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">1,200+</div>
               <div className="text-gray-600">Happy Clients</div>
             </div>
           </div>

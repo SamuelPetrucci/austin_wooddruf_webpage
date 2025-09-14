@@ -4,7 +4,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="about" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">
@@ -19,7 +19,7 @@ export default function AboutSection() {
           <AnimatedSection delay={200}>
             <div className="space-y-8">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur opacity-20" style={{ animation: 'pulse 5s ease-in-out infinite' }}></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-slate-200 rounded-3xl blur opacity-30" style={{ animation: 'pulse 8s ease-in-out infinite' }}></div>
                 <Image
                   src="/jordan-headshot.png"
                   alt="Jordan Smith - Insurance Professional"
@@ -30,16 +30,16 @@ export default function AboutSection() {
               </div>
               
               <div className="grid grid-cols-3 gap-4">
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">2+</div>
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl border border-gray-100">
+                  <div className="text-3xl font-bold text-blue-800 mb-2">2+</div>
                   <div className="text-sm font-medium text-gray-600">Years Experience</div>
                 </div>
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-3xl font-bold text-green-600 mb-2">1387+</div>
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl border border-gray-100">
+                  <div className="text-3xl font-bold text-blue-800 mb-2">1387+</div>
                   <div className="text-sm font-medium text-gray-600">Families Helped</div>
                 </div>
-                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">1207+</div>
+                <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl border border-gray-100">
+                  <div className="text-3xl font-bold text-blue-800 mb-2">1207+</div>
                   <div className="text-sm font-medium text-gray-600">Active Clients</div>
                 </div>
               </div>
@@ -51,7 +51,7 @@ export default function AboutSection() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 transform hover:scale-105 transition-all duration-300">
                   <div className="bg-blue-100 rounded-full p-3 flex-shrink-0">
-                    <UserIcon className="h-6 w-6 text-blue-600" />
+                    <UserIcon className="h-6 w-6 text-blue-800" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">My Journey</h3>
@@ -63,8 +63,8 @@ export default function AboutSection() {
                 </div>
 
                 <div className="flex items-start space-x-4 transform hover:scale-105 transition-all duration-300">
-                  <div className="bg-green-100 rounded-full p-3 flex-shrink-0">
-                    <CheckCircleIcon className="h-6 w-6 text-green-600" />
+                  <div className="bg-slate-100 rounded-full p-3 flex-shrink-0">
+                    <CheckCircleIcon className="h-6 w-6 text-blue-800" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">My Approach</h3>
@@ -76,8 +76,8 @@ export default function AboutSection() {
                 </div>
 
                 <div className="flex items-start space-x-4 transform hover:scale-105 transition-all duration-300">
-                  <div className="bg-purple-100 rounded-full p-3 flex-shrink-0">
-                    <HeartIcon className="h-6 w-6 text-purple-600" />
+                  <div className="bg-blue-100 rounded-full p-3 flex-shrink-0">
+                    <HeartIcon className="h-6 w-6 text-blue-800" />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">My Commitment</h3>

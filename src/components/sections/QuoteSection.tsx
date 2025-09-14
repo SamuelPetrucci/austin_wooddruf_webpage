@@ -52,7 +52,7 @@ export default function QuoteSection() {
   };
 
   return (
-    <section id="quote" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="quote" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get Your Free Insurance Quote</h2>
@@ -63,12 +63,12 @@ export default function QuoteSection() {
         
         <div className="bg-white rounded-2xl shadow-2xl p-8">
           {submitStatus === 'success' && (
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
               <div className="flex items-center">
-                <CheckCircleIcon className="h-8 w-8 text-green-500 mr-3" />
+                <CheckCircleIcon className="h-8 w-8 text-blue-600 mr-3" />
                 <div>
-                  <h3 className="text-lg font-semibold text-green-800">Thank You!</h3>
-                  <p className="text-green-700">Your quote request has been submitted successfully. We&apos;ll contact you within 12 hours with your personalized quote.</p>
+                  <h3 className="text-lg font-semibold text-blue-800">Thank You!</h3>
+                  <p className="text-blue-700">Your quote request has been submitted successfully. We&apos;ll contact you within 12 hours with your personalized quote.</p>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function QuoteSection() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                className="bg-blue-800 text-white px-12 py-4 rounded-lg font-semibold hover:bg-blue-900 transition-colors shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Submitting...' : 'Get My Quick Quote'}
               </button>

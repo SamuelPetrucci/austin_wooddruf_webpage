@@ -19,7 +19,7 @@ export default function StatesSection() {
         <AnimatedSection delay={0}>
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-4">
-              <MapPinIcon className="h-8 w-8 text-blue-600 mr-3" />
+              <MapPinIcon className="h-8 w-8 text-blue-800 mr-3" />
               <h2 className="text-4xl font-bold text-gray-900">States We Serve</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -44,8 +44,8 @@ export default function StatesSection() {
             </div>
             
             <div className="mt-8 text-center">
-              <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium transform hover:scale-105 transition-all duration-300">
-                <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+              <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium transform hover:scale-105 transition-all duration-300">
+                <div className="w-2 h-2 bg-blue-800 rounded-full mr-2"></div>
                 Licensed in 30 States
               </div>
             </div>
