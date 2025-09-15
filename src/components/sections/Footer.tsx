@@ -61,7 +61,7 @@ export default function Footer() {
             <div className="space-y-2 text-gray-400">
               <p>Phone: (860) 941-7770</p>
               <p>Email: insuredwithjordann@gmail.com</p>
-              <p>Service Area: Tampa, FL (Serving 30 States)</p>
+              <p>Service Area: Tampa, FL (Serving 38 States)</p>
             </div>
           </div>
         </div>

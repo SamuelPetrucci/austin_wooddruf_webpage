@@ -56,7 +56,7 @@ export default function AboutSection() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">My Journey</h3>
                     <p className="text-gray-700">
-                      With over 1207+ active clients and 1387+ families helped in just 2 years, 
+                      With over 1207+ active clients and 1387+ families helped in just 4 years, 
                       I&apos;ve discovered my true passion for protecting families and their futures.
                     </p>
                   </div>
