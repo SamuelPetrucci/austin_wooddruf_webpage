@@ -59,7 +59,7 @@ export default function QuoteAndBookingSection() {
 
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <iframe
-                    src="https://calendly.com/workdayboar1/health-insurance-quote-request"
+                    src="https://calendly.com/workdayboar1/30min"
                     width="100%"
                     height="600"
                     frameBorder="0"

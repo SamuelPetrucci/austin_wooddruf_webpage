@@ -31,7 +31,7 @@ export default function AboutSection() {
               
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl border border-gray-100">
-                  <div className="text-3xl font-bold text-blue-800 mb-2">2+</div>
+                  <div className="text-3xl font-bold text-blue-800 mb-2">4+</div>
                   <div className="text-sm font-medium text-gray-600">Years Experience</div>
                 </div>
                 <div className="text-center bg-white rounded-xl p-6 shadow-lg transform hover:scale-110 transition-all duration-300 hover:shadow-xl border border-gray-100">

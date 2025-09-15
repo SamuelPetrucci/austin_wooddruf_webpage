@@ -112,7 +112,7 @@ export default function HeroSection() {
                         <div className="text-xs text-gray-600">Families Helped</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">2+</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">4+</div>
                         <div className="text-xs text-gray-600">Years Experience</div>
                       </div>
                     </div>
