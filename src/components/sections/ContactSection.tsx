@@ -12,23 +12,40 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Schedule Your Consultation</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Book a free, no-obligation consultation with Jordan Smith. We&apos;ll discuss your insurance needs and find the perfect coverage for you and your family.
+            Book a free, no-obligation consultation with Austin Woodruff. We&apos;ll discuss your insurance needs and find the perfect coverage for you and your family.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Calendly Integration */}
           <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Choose Your Preferred Time</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Schedule Your Consultation</h3>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <iframe
-                src="https://calendly.com/workdayboar1/30min"
+                src="https://calendly.com/austinwoodruff/30min"
                 width="100%"
                 height="600"
                 frameBorder="0"
-                title="Schedule a consultation with Jordan Smith"
+                title="Schedule a consultation with Austin Woodruff"
                 className="rounded-lg"
               />
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-sm text-gray-600">Prefer to call or email?</p>
+              <div className="flex justify-center space-x-4 mt-2">
+                <a 
+                  href="tel:+17272482108"
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  📞 (727) 248-2108
+                </a>
+                <a 
+                  href="mailto:austinryanwoodruff@gmail.com"
+                  className="text-blue-600 hover:text-blue-800 font-medium"
+                >
+                  ✉️ Email Us
+                </a>
+              </div>
             </div>
           </div>
 
@@ -43,8 +60,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">(860) 941-7770</p>
-                    <p className="text-sm text-gray-500">Monday - Friday, 9 AM - 6 PM</p>
+                    <p className="text-gray-600">(727) 248-2108</p>
+                    <p className="text-sm text-gray-500">Available for consultations</p>
                   </div>
                 </div>
                 
@@ -54,8 +71,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-600">insuredwithjordann@gmail.com</p>
-                    <p className="text-sm text-gray-500">We&apos;ll respond within 12 hours</p>
+                    <p className="text-gray-600">austinryanwoodruff@gmail.com</p>
+                    <p className="text-sm text-gray-500">We&apos;ll respond quickly</p>
                   </div>
                 </div>
                 
@@ -65,8 +82,8 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Service Area</h4>
-                    <p className="text-gray-600">Tampa & St Petersburg, FL</p>
-                    <p className="text-sm text-gray-500">Licensed in multiple states</p>
+                    <p className="text-gray-600">Available Nationwide</p>
+                    <p className="text-sm text-gray-500">Licensed insurance professional</p>
                   </div>
                 </div>
               </div>

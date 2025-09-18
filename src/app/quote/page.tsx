@@ -234,8 +234,8 @@ export default function QuotePage() {
                     <div className="mt-3 p-3 bg-red-100 rounded-lg">
                       <p className="text-red-800 text-sm font-medium">Contact Information:</p>
                       <ul className="text-red-700 text-sm mt-1 ml-4 list-disc">
-                        <li>Phone: (860) 941-7770</li>
-                        <li>Email: jordan@jordanhealthsolutions.com</li>
+                        <li>Phone: (727) 248-2108</li>
+                        <li>Email: austinryanwoodruff@gmail.com</li>
                       </ul>
                     </div>
                   </div>
@@ -577,7 +577,7 @@ export default function QuotePage() {
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">How Did You Hear About Us?</h3>
                     <p className="text-gray-600 mb-6">
-                      Help us understand how you found Jordan Health Solutions. This information helps us improve our services.
+                      Help us understand how you found Austin Woodruff Insurance. This information helps us improve our services.
                     </p>
                     
                     <div className="space-y-4">

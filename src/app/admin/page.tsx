@@ -15,16 +15,16 @@ export default function AdminLogin() {
     setLoading(true);
     setError('');
 
-    // Secure authentication for Jordan
+    // Secure authentication for Austin
     const validCredentials = [
       {
-        email: 'jordan@jshealthsolutions.com',
-        password: 'JordanHealth2024!',
-        name: 'Jordan Smith'
+        email: 'austin@austinwoodruffinsurance.com',
+        password: 'AustinInsurance2024!',
+        name: 'Austin Woodruff'
       },
       {
-        email: 'admin@jordanhealthsolutions.com', 
-        password: 'AdminSecure2024!',
+        email: 'admin@austinwoodruffinsurance.com', 
+        password: 'AdminInsurance2024!',
         name: 'Admin User'
       }
     ];
@@ -77,7 +77,7 @@ export default function AdminLogin() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="jordan@jshealthsolutions.com"
+                  placeholder="austin@austinwoodruffinsurance.com"
                 />
               </div>
             </div>
@@ -129,9 +129,13 @@ export default function AdminLogin() {
 
           <div className="mt-6 text-center text-sm text-gray-600">
             <p className="font-medium text-gray-900">Authorized Users Only</p>
-            <p className="text-gray-500 mt-2">
-              Contact Jordan Smith for access credentials
-            </p>
+            <div className="mt-4 p-4 bg-gray-50 rounded-lg border">
+              <p className="text-gray-700 font-medium mb-2">Demo Credentials:</p>
+              <div className="text-left space-y-1">
+                <p className="text-gray-600"><span className="font-medium">Email:</span> austin@austinwoodruffinsurance.com</p>
+                <p className="text-gray-600"><span className="font-medium">Password:</span> AustinInsurance2024!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

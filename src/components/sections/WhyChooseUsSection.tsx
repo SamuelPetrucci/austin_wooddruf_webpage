@@ -12,7 +12,7 @@ export default function WhyChooseUsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Jordan Smith?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Austin Woodruff?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the difference that personalized service and rapid response can make
             </p>
@@ -27,7 +27,7 @@ export default function WhyChooseUsSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Lightning Fast Response</h3>
               <p className="text-gray-600">
-                6 hours or less response time depending on time of day. Unlike other agents, I pride myself on getting back to all clients within 12 hours of contact.
+                Fast response time with personalized attention. I pride myself on getting back to all clients quickly and providing the support you need when you need it.
               </p>
             </div>
           </AnimatedSection>
@@ -51,7 +51,7 @@ export default function WhyChooseUsSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Personal Connection</h3>
               <p className="text-gray-600">
-                1-on-1 personal connection line to all 32 carriers I have to provide. You&apos;re not just signing up for insurance - you have me for the lifetime of the policy.
+                Direct access to multiple top-rated insurance carriers. You&apos;re not just signing up for insurance - you have me for the lifetime of the policy.
               </p>
             </div>
           </AnimatedSection>
@@ -63,7 +63,7 @@ export default function WhyChooseUsSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Proven Results</h3>
               <p className="text-gray-600">
-                Over 1207+ active clients and 1387+ families helped in the last year and a half. I&apos;m always there to provide help and support when you need it most.
+                Dedicated to helping families find the right coverage. I&apos;m always there to provide help and support when you need it most.
               </p>
             </div>
           </AnimatedSection>

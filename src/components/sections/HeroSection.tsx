@@ -66,8 +66,8 @@ export default function HeroSection() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Comprehensive life and health insurance solutions tailored to your unique needs. 
-                Get the protection you deserve with personalized coverage from Jordan Smith, 
-                your dedicated insurance professional with over 1207+ active clients and 1387+ families served.
+                Get the protection you deserve with personalized coverage from Austin Woodruff, 
+                your dedicated insurance professional committed to finding the right coverage for you.
                 </p>
               </div>
 
@@ -104,16 +104,16 @@ export default function HeroSection() {
                     <h3 className="text-xl font-bold text-gray-900">Trusted Protection</h3>
                     <div className="flex justify-center space-x-6">
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">1207+</div>
-                        <div className="text-xs text-gray-600">Active Clients</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">100%</div>
+                        <div className="text-xs text-gray-600">Client Focused</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">1387+</div>
-                        <div className="text-xs text-gray-600">Families Helped</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">24/7</div>
+                        <div className="text-xs text-gray-600">Support Available</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">4+</div>
-                        <div className="text-xs text-gray-600">Years Experience</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">Free</div>
+                        <div className="text-xs text-gray-600">Consultations</div>
                       </div>
                     </div>
                     

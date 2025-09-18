@@ -30,20 +30,25 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity space-x-4">
-                {/* Company Logo */}
+              <Link href="/" className="flex items-center hover:opacity-80 transition-opacity space-x-3">
+                {/* Company Logo Icon */}
                 <Image
                   src="/logoimg.png"
                   alt="Company Logo"
-                  width={80}
-                  height={80}
-                  className="h-16 w-16 object-contain"
+                  width={60}
+                  height={60}
+                  className="h-12 w-12 object-contain"
                   priority
                 />
-                {/* Header Text - CSS Version for Perfect Clarity */}
-                <div className="text-2xl md:text-3xl font-bold text-slate-900 whitespace-nowrap">
-                  JS Health Solutions
-                </div>
+                {/* Company Name Text Image */}
+                <Image
+                  src="/logotxt.png"
+                  alt="Company Name"
+                  width={200}
+                  height={60}
+                  className="h-12 w-auto object-contain"
+                  priority
+                />
               </Link>
             </div>
           </div>

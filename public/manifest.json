@@ -1,24 +1,24 @@
 {
-  "name": "JS Health Solutions",
-  "short_name": "JS Health",
-  "description": "Comprehensive life and health insurance solutions from Jordan Smith",
+  "name": "Austin Woodruff Insurance",
+  "short_name": "Austin Insurance",
+  "description": "Comprehensive life and health insurance solutions from Austin Woodruff",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1e3a8a",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/logoimg.png",
       "sizes": "any",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "/favicon.png",
+      "src": "/logoimg.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/logo.png",
+      "src": "/logoimg.png",
       "sizes": "512x512",
       "type": "image/png"
     }

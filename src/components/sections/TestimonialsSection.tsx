@@ -17,93 +17,30 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah",
-    location: "Hartford, CT",
+    name: "Sarah M.",
+    location: "Florida",
     rating: 5,
-    text: "Jordan made the entire insurance process so simple and stress-free. He found me a health plan that saved me $200/month compared to what I was paying before. His attention to detail and genuine care for my family's needs really shows.",
+    text: "Austin made the entire insurance process so simple and stress-free. He found me a health plan that saved me money compared to what I was paying before. His attention to detail and genuine care for my family's needs really shows.",
     avatar: "S",
     insuranceType: "Health Insurance"
   },
   {
     id: 2,
-    name: "Michael",
-    location: "Manchester, NH",
+    name: "Michael R.",
+    location: "Texas",
     rating: 5,
-    text: "After my wife and I had our first child, we knew we needed better life insurance coverage. Jordan explained everything clearly and helped us understand exactly what we were getting. We feel so much more secure now.",
+    text: "After my wife and I had our first child, we knew we needed better life insurance coverage. Austin explained everything clearly and helped us understand exactly what we were getting. We feel so much more secure now.",
     avatar: "M",
     insuranceType: "Life Insurance"
   },
   {
     id: 3,
-    name: "Jennifer",
-    location: "Portland, ME",
+    name: "Jennifer L.",
+    location: "California",
     rating: 5,
-    text: "I was overwhelmed trying to navigate health insurance options for my small business. Jordan took the time to understand our needs and found us a plan that works perfectly for our team. Highly recommend his services!",
+    text: "I was overwhelmed trying to navigate health insurance options for my small business. Austin took the time to understand our needs and found us a plan that works perfectly for our team. Highly recommend his services!",
     avatar: "J",
     insuranceType: "Business Insurance"
-  },
-  {
-    id: 4,
-    name: "David",
-    location: "Burlington, VT",
-    rating: 5,
-    text: "Jordan's expertise in insurance is unmatched. He helped me restructure my coverage after a major life change and I'm now paying less for better protection. His customer service is exceptional - he's always available when I need him.",
-    avatar: "D",
-    insuranceType: "Life & Health"
-  },
-  {
-    id: 5,
-    name: "Lisa",
-    location: "Providence, RI",
-    rating: 5,
-    text: "As a single mom, finding affordable health insurance was a challenge. Jordan worked tirelessly to find me a plan that fits my budget while providing excellent coverage for my daughter and me. I'm so grateful for his help.",
-    avatar: "L",
-    insuranceType: "Health Insurance"
-  },
-  {
-    id: 6,
-    name: "Robert",
-    location: "Springfield, MA",
-    rating: 5,
-    text: "Jordan's knowledge of the insurance market is impressive. He helped me understand the fine print and made sure I was getting the best value for my money. The peace of mind he's given my family is priceless.",
-    avatar: "R",
-    insuranceType: "Life Insurance"
-  },
-  {
-    id: 7,
-    name: "Amanda",
-    location: "Concord, NH",
-    rating: 5,
-    text: "Working with Jordan was a game-changer for our family. He found us comprehensive coverage that we never knew existed, and the savings have been incredible. His professionalism and genuine care for his clients really stands out.",
-    avatar: "A",
-    insuranceType: "Health Insurance"
-  },
-  {
-    id: 8,
-    name: "Carlos",
-    location: "Bangor, ME",
-    rating: 5,
-    text: "Jordan helped me navigate the complex world of life insurance after my divorce. He was patient, thorough, and made sure I understood every detail. I finally have the protection my kids deserve.",
-    avatar: "C",
-    insuranceType: "Life Insurance"
-  },
-  {
-    id: 9,
-    name: "Emily",
-    location: "Rutland, VT",
-    rating: 5,
-    text: "As a freelancer, finding affordable health insurance seemed impossible. Jordan found me a plan that fits my budget perfectly while providing excellent coverage. I can't thank him enough for his expertise.",
-    avatar: "E",
-    insuranceType: "Health Insurance"
-  },
-  {
-    id: 10,
-    name: "James",
-    location: "Newport, RI",
-    rating: 5,
-    text: "Jordan's attention to detail is remarkable. He reviewed my existing policies and found gaps I didn't even know existed. Now I have complete coverage that gives me peace of mind for my family's future.",
-    avatar: "J",
-    insuranceType: "Life & Health"
   }
 ];
 
@@ -150,7 +87,7 @@ export default function TestimonialsSection() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Don&apos;t just take our word for it. Here&apos;s what real clients have to say about their experience with Jordan Health Solutions.
+              Don&apos;t just take our word for it. Here&apos;s what real clients have to say about their experience with Austin Woodruff Insurance.
             </p>
           </div>
         </AnimatedSection>
@@ -250,16 +187,16 @@ export default function TestimonialsSection() {
         <AnimatedSection delay={400}>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">4.9/5</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">5.0/5</div>
               <div className="text-gray-600">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">98%</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">100%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">1,200+</div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">Free</div>
+              <div className="text-gray-600">Consultations</div>
             </div>
           </div>
         </AnimatedSection>

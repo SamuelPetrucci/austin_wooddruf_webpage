@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { supabase, FormSubmission } from '@/lib/supabase';
+import { FormSubmission } from '@/lib/supabase';
 
 export default function SubmissionDetails() {
   const params = useParams();
@@ -19,14 +19,11 @@ export default function SubmissionDetails() {
 
   const fetchSubmission = async (id: string) => {
     try {
-      const { data, error } = await supabase
-        .from('form_submissions')
-        .select('*')
-        .eq('id', id)
-        .single();
+      const response = await fetch(`/api/admin/submissions/${id}`);
+      const result = await response.json();
 
-      if (error) throw error;
-      setSubmission(data);
+      if (result.error) throw new Error(result.error);
+      setSubmission(result.data);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch submission');
     } finally {
@@ -38,15 +35,17 @@ export default function SubmissionDetails() {
     if (!submission) return;
 
     try {
-      const { error } = await supabase
-        .from('form_submissions')
-        .update({ 
-          status: newStatus,
-          updated_at: new Date().toISOString()
-        })
-        .eq('id', submission.id);
+      const response = await fetch(`/api/admin/submissions/${submission.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ status: newStatus }),
+      });
 
-      if (error) throw error;
+      const result = await response.json();
+
+      if (!result.success) throw new Error(result.error);
       
       setSubmission(prev => prev ? { ...prev, status: newStatus } : null);
     } catch (err) {
@@ -221,7 +220,7 @@ export default function SubmissionDetails() {
 
               <div className="flex space-x-3">
                 <a
-                  href={`mailto:${submission.email}?subject=Your Insurance Quote Request&body=Hi ${submission.first_name},%0D%0A%0D%0AThank you for your interest in our insurance services. I'd like to discuss your quote request and provide you with personalized options.%0D%0A%0D%0APlease let me know a good time to call you.%0D%0A%0D%0ABest regards,%0D%0AJordan Smith`}
+                  href={`mailto:${submission.email}?subject=Your Insurance Quote Request&body=Hi ${submission.first_name},%0D%0A%0D%0AThank you for your interest in our insurance services. I'd like to discuss your quote request and provide you with personalized options.%0D%0A%0D%0APlease let me know a good time to call you.%0D%0A%0D%0ABest regards,%0D%0AAustin Woodruff`}
                   className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700"
                 >
                   📧 Send Email

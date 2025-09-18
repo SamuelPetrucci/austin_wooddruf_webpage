@@ -149,14 +149,15 @@ async function saveToSupabase(formData: QuoteFormData) {
     monthly_budget: formData.desiredBudget,
     coverage_type: formData.coverageType,
     additional_info: formData.additionalInfo || 'None',
-    // referred_by: formData.referredBy || false,
-    // referral_name: formData.referralName || '',
+    referred_by: formData.referredBy || false,
+    referral_name: formData.referralName || '',
     status: 'new',
-    source: 'Website Quote Form'
+    source: 'Austin Woodruff Insurance Website',
+    agent_name: 'Austin Woodruff'
   };
 
   const { data: submission, error: dbError } = await serviceRoleClient
-    .from('form_submissions')
+    .from('austin_woodruff_submissions')
     .insert([submissionData])
     .select()
     .single();
@@ -198,7 +199,7 @@ async function sendOwnerNotification(formData: QuoteFormData) {
     <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
       <div style="background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center;">
         <h1 style="margin: 0; font-size: 28px;">🔔 New Quote Request</h1>
-        <p style="margin: 10px 0 0 0; opacity: 0.9;">Jordan Health Solutions</p>
+        <p style="margin: 10px 0 0 0; opacity: 0.9;">Austin Woodruff Insurance</p>
       </div>
       
       <div style="background: white; padding: 30px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 10px 10px;">
@@ -253,7 +254,7 @@ async function sendOwnerNotification(formData: QuoteFormData) {
   `;
 
   const notificationText = `
-New Quote Request - Jordan Health Solutions
+New Quote Request - Austin Woodruff Insurance
 
 CUSTOMER INFORMATION:
 Name: ${formData.firstName} ${formData.lastName}
@@ -284,18 +285,18 @@ Please contact this customer within 12 hours to provide their personalized quote
   try {
     await transporter.sendMail({
       from: {
-        name: 'JS Health Solutions',
-        address: process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com'
+        name: 'Austin Woodruff Insurance',
+        address: process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com'
       },
-      to: process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com',
-      subject: `🔔 New Quote Request - ${formData.firstName} ${formData.lastName} - JS Health Solutions`,
+      to: process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com',
+      subject: `🔔 New Quote Request - ${formData.firstName} ${formData.lastName} - Austin Woodruff Insurance`,
       html: notificationHtml,
       text: notificationText,
       // Add proper email headers to prevent spam
       headers: {
-        'Reply-To': process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com',
-        'Return-Path': process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com',
-        'Message-ID': `<${Date.now()}-${Math.random().toString(36).substr(2, 9)}@jordanhealthsolutions.com>`
+        'Reply-To': process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com',
+        'Return-Path': process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com',
+        'Message-ID': `<${Date.now()}-${Math.random().toString(36).substr(2, 9)}@austinwoodruffinsurance.com>`
       }
     });
     console.log('✅ Owner notification sent');
@@ -329,10 +330,10 @@ async function sendCustomerConfirmation(formData: QuoteFormData) {
     <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8fafc;">
       <div style="background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; padding: 30px; border-radius: 10px 10px 0 0; text-align: center; position: relative;">
         <div style="margin-bottom: 20px;">
-          <img src="https://jordanhealthsolutions.com/logo.png" alt="JS Health Solutions" style="max-height: 60px; width: auto; filter: brightness(0) invert(1);">
+          <img src="https://austinwoodruffinsurance.com/logoimg.png" alt="Austin Woodruff Insurance" style="max-height: 60px; width: auto; filter: brightness(0) invert(1);">
         </div>
         <h1 style="margin: 0; font-size: 28px; font-weight: 600;">Thank You!</h1>
-        <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 16px;">JS Health Solutions</p>
+        <p style="margin: 10px 0 0 0; opacity: 0.9; font-size: 16px;">Austin Woodruff Insurance</p>
       </div>
       
       <div style="background: white; padding: 30px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 10px 10px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -352,16 +353,16 @@ async function sendCustomerConfirmation(formData: QuoteFormData) {
         
         <p style="color: #374151; margin-bottom: 15px;">If you have any questions in the meantime, please don't hesitate to contact us:</p>
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e2e8f0;">
-          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">📞 Phone:</strong> <a href="tel:+18609417770" style="color: #3b82f6; text-decoration: none;">(860) 941-7770</a></p>
-          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">✉️ Email:</strong> <a href="mailto:insuredwithjordan@gmail.com" style="color: #3b82f6; text-decoration: none;">insuredwithjordan@gmail.com</a></p>
+          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">📞 Phone:</strong> <a href="tel:+17272482108" style="color: #3b82f6; text-decoration: none;">(727) 248-2108</a></p>
+          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">✉️ Email:</strong> <a href="mailto:austinryanwoodruff@gmail.com" style="color: #3b82f6; text-decoration: none;">austinryanwoodruff@gmail.com</a></p>
         </div>
         
         <p style="color: #374151; font-size: 16px; margin-bottom: 25px;">We look forward to helping you protect what matters most!</p>
         
         <div style="background: linear-gradient(135deg, #1e40af, #3b82f6); color: white; padding: 25px; border-radius: 12px; text-align: center; margin-top: 30px; box-shadow: 0 4px 6px rgba(30, 64, 175, 0.2);">
-          <p style="margin: 0; font-weight: 600; font-size: 18px;">Jordan Smith</p>
+          <p style="margin: 0; font-weight: 600; font-size: 18px;">Austin Woodruff</p>
           <p style="margin: 8px 0 0 0; opacity: 0.9; font-size: 15px;">Licensed Insurance Professional</p>
-          <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 15px;">JS Health Solutions</p>
+          <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 15px;">Austin Woodruff Insurance</p>
         </div>
       </div>
     </body>
@@ -371,17 +372,17 @@ async function sendCustomerConfirmation(formData: QuoteFormData) {
   try {
     await transporter.sendMail({
       from: {
-        name: 'JS Health Solutions',
-        address: process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com'
+        name: 'Austin Woodruff Insurance',
+        address: process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com'
       },
       to: formData.email,
-      subject: 'Thank you for your insurance quote request - JS Health Solutions',
+      subject: 'Thank you for your insurance quote request - Austin Woodruff Insurance',
       html: confirmationHtml,
       // Add proper email headers to prevent spam
       headers: {
-        'Reply-To': process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com',
-        'Return-Path': process.env.SITE_OWNER_EMAIL || 'insuredwithjordan@gmail.com',
-        'Message-ID': `<${Date.now()}-${Math.random().toString(36).substr(2, 9)}@jordanhealthsolutions.com>`
+        'Reply-To': process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com',
+        'Return-Path': process.env.SITE_OWNER_EMAIL || 'austinryanwoodruff@gmail.com',
+        'Message-ID': `<${Date.now()}-${Math.random().toString(36).substr(2, 9)}@austinwoodruffinsurance.com>`
       }
     });
     console.log(`✅ Confirmation email sent to ${formData.email}`);

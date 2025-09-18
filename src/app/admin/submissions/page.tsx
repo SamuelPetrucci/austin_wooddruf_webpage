@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { supabase, FormSubmission } from '@/lib/supabase';
+import { FormSubmission } from '@/lib/supabase';
 
 export default function AdminSubmissions() {
   const [submissions, setSubmissions] = useState<FormSubmission[]>([]);
@@ -31,13 +31,11 @@ export default function AdminSubmissions() {
 
   const fetchSubmissions = async () => {
     try {
-      const { data, error } = await supabase
-        .from('form_submissions')
-        .select('*')
-        .order('created_at', { ascending: false });
+      const response = await fetch('/api/admin/submissions');
+      const result = await response.json();
 
-      if (error) throw error;
-      setSubmissions(data || []);
+      if (result.error) throw new Error(result.error);
+      setSubmissions(result.data || []);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to fetch submissions');
     } finally {
@@ -47,15 +45,17 @@ export default function AdminSubmissions() {
 
   const updateStatus = async (id: string, newStatus: FormSubmission['status']) => {
     try {
-      const { error } = await supabase
-        .from('form_submissions')
-        .update({ 
-          status: newStatus,
-          updated_at: new Date().toISOString()
-        })
-        .eq('id', id);
+      const response = await fetch('/api/admin/submissions', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id, status: newStatus }),
+      });
 
-      if (error) throw error;
+      const result = await response.json();
+
+      if (!result.success) throw new Error(result.error);
       
       // Update local state
       setSubmissions(prev => 

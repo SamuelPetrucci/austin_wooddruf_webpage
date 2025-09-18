@@ -59,13 +59,31 @@ export default function QuoteAndBookingSection() {
 
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <iframe
-                    src="https://calendly.com/workdayboar1/30min"
+                    src="https://calendly.com/austinwoodruff/30min"
                     width="100%"
                     height="600"
                     frameBorder="0"
-                    title="Schedule a consultation with Jordan Smith"
+                    title="Schedule a consultation with Austin Woodruff"
                     className="rounded-lg"
                   />
+                </div>
+                
+                <div className="mt-6 text-center">
+                  <p className="text-sm text-gray-600 mb-3">Prefer to call or email directly?</p>
+                  <div className="flex justify-center space-x-6">
+                    <a 
+                      href="tel:+17272482108"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                    >
+                      📞 (727) 248-2108
+                    </a>
+                    <a 
+                      href="mailto:austinryanwoodruff@gmail.com"
+                      className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
+                    >
+                      ✉️ Email Us
+                    </a>
+                  </div>
                 </div>
 
                 <div className="mt-6 text-center">
