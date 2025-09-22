@@ -59,20 +59,12 @@ export default function ServicesSection() {
             <ShieldCheckIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Health Insurance</h3>
             <p className="text-gray-600 mb-6">
-              Major Medical Insurance Plans covering everything from labor, mental health, substance abuse, and all regular day-to-day services, surgeries and more.
+              Major Medical Insurance Plans covering everything from labor, mental health, substance abuse, and all regular day-to-day services, surgeries and more. We also offer group coverage for small businesses.
             </p>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-center">
                 <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                Ambetter
-              </li>
-              <li className="flex items-center">
-                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                United Healthcare
-              </li>
-              <li className="flex items-center">
-                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                Aetna
+                Cigna
               </li>
               <li className="flex items-center">
                 <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
@@ -80,7 +72,15 @@ export default function ServicesSection() {
               </li>
               <li className="flex items-center">
                 <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                PHCS, Cigna, Oscar, Molina Healthcare & more
+                United Healthcare
+              </li>
+              <li className="flex items-center">
+                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
+                PHCS
+              </li>
+              <li className="flex items-center">
+                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
+                and more
               </li>
             </ul>
             </div>
@@ -110,6 +110,10 @@ export default function ServicesSection() {
               <li className="flex items-center">
                 <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
                 Critical Illness Insurance
+              </li>
+              <li className="flex items-center">
+                <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
+                Dental & Vision Coverage
               </li>
             </ul>
             </div>

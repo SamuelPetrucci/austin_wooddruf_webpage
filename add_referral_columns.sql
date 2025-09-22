@@ -14,3 +14,5 @@ SELECT column_name, data_type, is_nullable, column_default
 FROM information_schema.columns 
 WHERE table_name = 'austin_woodruff_submissions' 
 AND column_name IN ('referred_by', 'referral_name');
+
+
