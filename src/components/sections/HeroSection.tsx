@@ -16,8 +16,17 @@ export default function HeroSection() {
     <section id="hero" className="pt-20 relative overflow-hidden">
       {/* Professional Background */}
       <div className="absolute inset-0">
+        {/* Hero background image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/herobackroundimg.avif)',
+          }}
+        ></div>
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-white/60 backdrop-blur-[1px]"></div>
         {/* Clean gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-100"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-blue-50/40 to-slate-100/80"></div>
         
         {/* Animated gradient wave overlay - More visible */}
         <div className="absolute inset-0 bg-gradient-to-tr from-blue-200/20 via-transparent to-slate-300/20 animate-gradient-wave"></div>
