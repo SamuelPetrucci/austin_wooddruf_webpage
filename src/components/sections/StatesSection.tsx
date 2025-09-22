@@ -5,11 +5,10 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function StatesSection() {
   const states = [
-    'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida',
-    'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-    'Maryland', 'Massachusetts', 'Michigan', 'Mississippi', 'Missouri', 'New Jersey', 'New York',
-    'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina',
-    'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'West Virginia', 'Wisconsin', 'Wyoming'
+    'Florida', 'Georgia', 'Texas', 'Tennessee', 'Ohio', 'Oklahoma', 'Kentucky', 'Arizona',
+    'South Carolina', 'North Carolina', 'Pennsylvania', 'Kansas', 'Louisiana', 'Virginia',
+    'Colorado', 'California', 'Maryland', 'Wisconsin', 'Illinois', 'Utah', 'Nevada',
+    'New Jersey', 'Minnesota', 'Connecticut', 'New York', 'Indiana'
   ];
 
   return (
@@ -22,7 +21,7 @@ export default function StatesSection() {
               <h2 className="text-4xl font-bold text-gray-900">States We Serve</h2>
             </div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Based in Tampa, Florida, we&apos;re licensed to provide insurance services across 40 states, 
+            Based in Tampa, Florida, we&apos;re licensed to provide insurance services across 27 states, 
             bringing you the best coverage options no matter where you call home.
             </p>
           </div>
@@ -45,7 +44,7 @@ export default function StatesSection() {
             <div className="mt-8 text-center">
               <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium transform hover:scale-105 transition-all duration-300">
                 <div className="w-2 h-2 bg-blue-800 rounded-full mr-2"></div>
-                Licensed in 40 States
+                Licensed in 27 States • NPN: 21417715
               </div>
             </div>
           </div>

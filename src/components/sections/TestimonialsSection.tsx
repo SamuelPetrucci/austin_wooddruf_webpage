@@ -41,6 +41,69 @@ const testimonials: Testimonial[] = [
     text: "I was overwhelmed trying to navigate health insurance options for my small business. Austin took the time to understand our needs and found us a plan that works perfectly for our team. Highly recommend his services!",
     avatar: "J",
     insuranceType: "Business Insurance"
+  },
+  {
+    id: 4,
+    name: "David K.",
+    location: "Georgia",
+    rating: 5,
+    text: "Honestly, I was skeptical at first. But Austin proved me wrong - he got me better coverage for less money. No BS, just straight facts and great service.",
+    avatar: "D",
+    insuranceType: "Health Insurance"
+  },
+  {
+    id: 5,
+    name: "Lisa T.",
+    location: "Tennessee",
+    rating: 5,
+    text: "When I was diagnosed with a pre-existing condition, I thought finding affordable insurance would be impossible. Austin worked miracles and found me a plan that actually covers my needs. Grateful doesn't even begin to describe it.",
+    avatar: "L",
+    insuranceType: "Health Insurance"
+  },
+  {
+    id: 6,
+    name: "Robert C.",
+    location: "Ohio",
+    rating: 5,
+    text: "Austin helped me set up life insurance for my family. The process was quick, painless, and he answered every question I had. My wife and kids are protected now, and that peace of mind is priceless.",
+    avatar: "R",
+    insuranceType: "Life Insurance"
+  },
+  {
+    id: 7,
+    name: "Maria G.",
+    location: "Arizona",
+    rating: 5,
+    text: "As a small business owner, I needed group coverage for my employees. Austin found us an amazing plan that everyone loves. My team is healthier and happier, and it didn't break the bank!",
+    avatar: "M",
+    insuranceType: "Business Insurance"
+  },
+  {
+    id: 8,
+    name: "James W.",
+    location: "Pennsylvania",
+    rating: 5,
+    text: "I've worked with several insurance agents over the years, but Austin is different. He actually listens, explains things in plain English, and genuinely cares about finding the right solution. Refreshing change!",
+    avatar: "J",
+    insuranceType: "Health Insurance"
+  },
+  {
+    id: 9,
+    name: "Amanda H.",
+    location: "Colorado",
+    rating: 5,
+    text: "After my divorce, I needed to update all my insurance policies. Austin made what I thought would be a nightmare process actually easy. He's professional, knowledgeable, and really goes above and beyond.",
+    avatar: "A",
+    insuranceType: "Life Insurance"
+  },
+  {
+    id: 10,
+    name: "Carlos M.",
+    location: "Nevada",
+    rating: 5,
+    text: "Austin helped me understand the difference between all these insurance options. I finally feel confident about my coverage choices. The guy knows his stuff and doesn't try to oversell you.",
+    avatar: "C",
+    insuranceType: "Health Insurance"
   }
 ];
 
