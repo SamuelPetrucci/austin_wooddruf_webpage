@@ -12,8 +12,8 @@ export default function InsuranceCarriersBanner() {
     { name: 'Anthem', logo: '/logos/anthem.avif', isLarge: false },
   ];
 
-  // Create multiple duplicates for seamless infinite scrolling
-  const duplicatedCarriers = [...carriers, ...carriers, ...carriers, ...carriers];
+  // Create enough duplicates for seamless infinite scrolling
+  const duplicatedCarriers = [...carriers, ...carriers, ...carriers, ...carriers, ...carriers, ...carriers];
 
   return (
     <section id="carriers" className="py-16 bg-blue-50">
@@ -90,16 +90,37 @@ export default function InsuranceCarriersBanner() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-25%);
+            transform: translateX(-16.666%);
+          }
+        }
+        
+        @keyframes scroll-mobile {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-16.666%);
           }
         }
         
         .animate-scroll {
-          animation: scroll 25s linear infinite;
+          animation: scroll 20s linear infinite;
         }
         
         .animate-scroll:hover {
           animation-play-state: paused;
+        }
+        
+        @media (max-width: 768px) {
+          .animate-scroll {
+            animation: scroll-mobile 12s linear infinite;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .animate-scroll {
+            animation: scroll-mobile 8s linear infinite;
+          }
         }
       `}</style>
     </section>
