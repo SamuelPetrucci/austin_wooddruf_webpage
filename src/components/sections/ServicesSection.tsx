@@ -23,19 +23,17 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Life Insurance */}
           <AnimatedSection delay={200}>
-            <div className="relative rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
-              {/* Background image */}
-              <div className="absolute inset-0">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
+              {/* Header Image */}
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
                 <Image
                   src="/lifeinsurancecard.avif"
                   alt="Life Insurance"
-                  fill
-                  className="object-cover opacity-20"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 to-slate-50/90"></div>
               </div>
-              {/* Content */}
-              <div className="relative z-10">
             <HeartIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Life Insurance</h3>
             <p className="text-gray-600 mb-6">
@@ -63,25 +61,22 @@ export default function ServicesSection() {
                 Cash Back Options
               </li>
             </ul>
-              </div>
             </div>
           </AnimatedSection>
           
           {/* Health Insurance */}
           <AnimatedSection delay={400}>
-            <div className="relative rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
-              {/* Background image */}
-              <div className="absolute inset-0">
+            <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
+              {/* Header Image */}
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
                 <Image
                   src="/healthinsurancecard.avif"
                   alt="Health Insurance"
-                  fill
-                  className="object-cover opacity-20"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-50/90 to-blue-50/90"></div>
               </div>
-              {/* Content */}
-              <div className="relative z-10">
             <ShieldCheckIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Health Insurance</h3>
             <p className="text-gray-600 mb-6">
@@ -109,25 +104,22 @@ export default function ServicesSection() {
                 and more
               </li>
             </ul>
-              </div>
             </div>
           </AnimatedSection>
           
           {/* Additional Protection */}
           <AnimatedSection delay={600}>
-            <div className="relative rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
-              {/* Background image */}
-              <div className="absolute inset-0">
+            <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
+              {/* Header Image */}
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
                 <Image
                   src="/additionalprotections.avif"
                   alt="Additional Protection"
-                  fill
-                  className="object-cover opacity-20"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 to-slate-50/90"></div>
               </div>
-              {/* Content */}
-              <div className="relative z-10">
             <UserGroupIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Additional Protection</h3>
             <p className="text-gray-600 mb-6">
@@ -155,7 +147,6 @@ export default function ServicesSection() {
                 Dental & Vision Coverage
               </li>
             </ul>
-              </div>
             </div>
           </AnimatedSection>
         </div>
