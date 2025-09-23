@@ -64,7 +64,7 @@ export default function QuoteAndBookingSection() {
                     </div>
                     <h4 className="text-xl font-bold text-gray-900 mb-3">Smart Booking Coming Soon</h4>
                     <p className="text-gray-600 mb-6">
-                      We're working on an advanced booking system that will make scheduling your consultation even easier. 
+                      We&apos;re working on an advanced booking system that will make scheduling your consultation even easier. 
                       In the meantime, please use the contact options below.
                     </p>
                     <div className="bg-white rounded-lg p-4 border-2 border-dashed border-blue-200">
