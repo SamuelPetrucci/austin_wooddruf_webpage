@@ -9,7 +9,9 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="pt-32 pb-20 bg-white relative">
+      {/* Smooth transition gradient to carriers section */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent to-blue-50"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">
@@ -27,7 +29,7 @@ export default function ServicesSection() {
               {/* Header Image */}
               <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
                 <Image
-                  src="/lifeinsurancecard.avif"
+                  src="/lifeinsurancecard.jpg"
                   alt="Life Insurance"
                   width={400}
                   height={200}
@@ -101,7 +103,7 @@ export default function ServicesSection() {
               </li>
               <li className="flex items-center">
                 <CheckCircleIcon className="h-5 w-5 text-blue-600 mr-2" />
-                and more
+                Aetna, First Health, Ambetter, Oscar, Etc.
               </li>
             </ul>
             </div>

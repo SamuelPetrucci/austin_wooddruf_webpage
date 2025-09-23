@@ -13,10 +13,12 @@ export default function InsuranceCarriersBanner() {
   ];
 
   // Create enough duplicates for seamless infinite scrolling
-  const duplicatedCarriers = [...carriers, ...carriers, ...carriers, ...carriers, ...carriers, ...carriers];
+  const duplicatedCarriers = [...carriers, ...carriers, ...carriers];
 
   return (
-    <section id="carriers" className="py-16 bg-blue-50">
+    <section id="carriers" className="pt-20 pb-16 bg-blue-50 relative">
+      {/* Smooth transition gradient to next section */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-b from-transparent to-gray-50"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-12">
@@ -31,7 +33,7 @@ export default function InsuranceCarriersBanner() {
         {/* Scrolling Banner */}
         <AnimatedSection delay={200}>
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll">
+            <div className="flex animate-scroll-infinite">
             {duplicatedCarriers.map((carrier, index) => (
               <div
                 key={`${carrier.name}-${index}`}
@@ -85,41 +87,33 @@ export default function InsuranceCarriersBanner() {
       </div>
 
       <style jsx>{`
-        @keyframes scroll {
+        @keyframes scroll-wheel {
           0% {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-16.666%);
+            transform: translateX(-33.333%);
           }
         }
         
-        @keyframes scroll-mobile {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-16.666%);
-          }
+        .animate-scroll-infinite {
+          animation: scroll-wheel 30s linear infinite;
+          will-change: transform;
         }
         
-        .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-        
-        .animate-scroll:hover {
+        .animate-scroll-infinite:hover {
           animation-play-state: paused;
         }
         
         @media (max-width: 768px) {
-          .animate-scroll {
-            animation: scroll-mobile 12s linear infinite;
+          .animate-scroll-infinite {
+            animation: scroll-wheel 18s linear infinite;
           }
         }
         
         @media (max-width: 480px) {
-          .animate-scroll {
-            animation: scroll-mobile 8s linear infinite;
+          .animate-scroll-infinite {
+            animation: scroll-wheel 12s linear infinite;
           }
         }
       `}</style>

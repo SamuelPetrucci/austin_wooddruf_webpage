@@ -62,9 +62,12 @@ export default function HeroSection() {
         
         {/* Clean overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent"></div>
+        
+        {/* Smooth transition gradient to next section */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pb-32 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection delay={0}>
             <div className="space-y-8">
@@ -113,7 +116,7 @@ export default function HeroSection() {
                     <h3 className="text-xl font-bold text-gray-900">Trusted Protection</h3>
                     <div className="flex justify-center space-x-6">
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">100%</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">98%</div>
                         <div className="text-xs text-gray-600">Client Focused</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">

@@ -46,26 +46,31 @@ export default function QuoteAndBookingSection() {
                   <CalendarDaysIcon className="h-16 w-16 text-blue-800 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Book Your Consultation</h3>
                   <p className="text-gray-600">
-                    Choose a time that works best for you. Our insurance experts are ready to help find the perfect coverage for your needs.
+                    Smart booking system coming soon! In the meantime, please contact us directly to schedule your consultation.
                   </p>
                 </div>
                 
                 <div className="bg-gray-50 rounded-lg p-4 mb-6">
                   <div className="flex items-center justify-center text-blue-800">
                     <CheckCircleIcon className="h-5 w-5 mr-2" />
-                    <span className="text-sm font-medium">Select your preferred time slot below</span>
+                    <span className="text-sm font-medium">Use the contact options below to schedule your consultation</span>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <iframe
-                    src="https://calendly.com/austinwoodruff/30min"
-                    width="100%"
-                    height="600"
-                    frameBorder="0"
-                    title="Schedule a consultation with Austin Woodruff"
-                    className="rounded-lg"
-                  />
+                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg shadow-lg p-12 text-center">
+                  <div className="max-w-md mx-auto">
+                    <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                      <CalendarDaysIcon className="h-10 w-10 text-blue-800" />
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-3">Smart Booking Coming Soon</h4>
+                    <p className="text-gray-600 mb-6">
+                      We're working on an advanced booking system that will make scheduling your consultation even easier. 
+                      In the meantime, please use the contact options below.
+                    </p>
+                    <div className="bg-white rounded-lg p-4 border-2 border-dashed border-blue-200">
+                      <p className="text-sm text-blue-800 font-medium">🚀 New features launching soon!</p>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="mt-6 text-center">

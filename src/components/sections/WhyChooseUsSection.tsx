@@ -8,7 +8,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="pt-16 pb-20 bg-gray-50 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection delay={0}>
           <div className="text-center mb-16">

@@ -250,11 +250,11 @@ export default function TestimonialsSection() {
         <AnimatedSection delay={400}>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">5.0/5</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">4.8/5</div>
               <div className="text-gray-600">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-800 mb-2">100%</div>
+              <div className="text-4xl font-bold text-blue-800 mb-2">96%</div>
               <div className="text-gray-600">Client Satisfaction</div>
             </div>
             <div className="text-center">
