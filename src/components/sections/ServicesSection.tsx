@@ -27,7 +27,7 @@ export default function ServicesSection() {
           <AnimatedSection delay={200}>
             <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
               {/* Header Image */}
-              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden relative">
                 <Image
                   src="/lifeinsurancecard.jpg"
                   alt="Life Insurance"
@@ -35,6 +35,8 @@ export default function ServicesSection() {
                   height={200}
                   className="w-full h-48 object-cover"
                 />
+                {/* Fade transition overlay */}
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-blue-50 to-transparent"></div>
               </div>
             <HeartIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Life Insurance</h3>
@@ -70,7 +72,7 @@ export default function ServicesSection() {
           <AnimatedSection delay={400}>
             <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
               {/* Header Image */}
-              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden relative">
                 <Image
                   src="/healthinsurancecard.avif"
                   alt="Health Insurance"
@@ -78,6 +80,8 @@ export default function ServicesSection() {
                   height={200}
                   className="w-full h-48 object-cover"
                 />
+                {/* Fade transition overlay */}
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-slate-50 to-transparent"></div>
               </div>
             <ShieldCheckIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Health Insurance</h3>
@@ -113,7 +117,7 @@ export default function ServicesSection() {
           <AnimatedSection delay={600}>
             <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-100 overflow-hidden">
               {/* Header Image */}
-              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden">
+              <div className="mb-6 -mt-8 -mx-8 rounded-t-2xl overflow-hidden relative">
                 <Image
                   src="/additionalprotections.avif"
                   alt="Additional Protection"
@@ -121,6 +125,8 @@ export default function ServicesSection() {
                   height={200}
                   className="w-full h-48 object-cover"
                 />
+                {/* Fade transition overlay */}
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-blue-50 to-transparent"></div>
               </div>
             <UserGroupIcon className="h-12 w-12 text-blue-800 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Additional Protection</h3>
