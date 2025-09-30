@@ -20,19 +20,21 @@ export default function AboutSection() {
             <div className="space-y-8">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-slate-200 rounded-3xl blur opacity-30" style={{ animation: 'pulse 8s ease-in-out infinite' }}></div>
-                <div className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 bg-gradient-to-br from-blue-100 to-slate-100 w-full h-96 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg border-4 border-blue-300 overflow-hidden">
-                      <Image
-                        src="/austinwoodrufheadshot.png"
-                        alt="Austin Woodruff"
-                        width={128}
-                        height={128}
-                        className="object-cover w-full h-full"
-                      />
+                <div className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
+                  <Image
+                    src="/austinwoodrufheadshot.png"
+                    alt="Austin Woodruff"
+                    width={400}
+                    height={384}
+                    className="w-full h-96 object-cover object-top"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
+                  {/* Overlay with name and title */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
+                    <div className="text-center">
+                      <p className="text-white font-medium text-lg">Austin Woodruff</p>
+                      <p className="text-white/90 text-sm">Insurance Professional</p>
                     </div>
-                    <p className="text-gray-600 font-medium">Austin Woodruff</p>
-                    <p className="text-gray-500 text-sm">Insurance Professional</p>
                   </div>
                 </div>
               </div>
