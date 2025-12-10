@@ -79,7 +79,7 @@ export default function HeroSection() {
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Comprehensive life and health insurance solutions tailored to your unique needs. 
                 Get the protection you deserve with personalized coverage from Austin Woodruff, 
-                your dedicated insurance professional committed to finding the right coverage for you.
+                your dedicated insurance professional who is 100 percent client focused and committed to finding the right coverage for you.
                 </p>
               </div>
 
@@ -116,7 +116,7 @@ export default function HeroSection() {
                     <h3 className="text-xl font-bold text-gray-900">Trusted Protection</h3>
                     <div className="flex justify-center space-x-6">
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">98%</div>
+                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">100%</div>
                         <div className="text-xs text-gray-600">Client Focused</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">

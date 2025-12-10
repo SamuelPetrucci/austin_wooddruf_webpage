@@ -20,22 +20,14 @@ export default function AboutSection() {
             <div className="space-y-8">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-slate-200 rounded-3xl blur opacity-30" style={{ animation: 'pulse 8s ease-in-out infinite' }}></div>
-                <div className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
+                <div className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden bg-white p-12 flex items-center justify-center min-h-96">
                   <Image
-                    src="/austinwoodrufheadshot.png"
-                    alt="Austin Woodruff"
-                    width={400}
-                    height={384}
-                    className="w-full h-96 object-cover object-top"
-                    style={{ objectPosition: 'center 20%' }}
+                    src="/logoimg.png"
+                    alt="Austin Woodruff Insurance Logo"
+                    width={300}
+                    height={300}
+                    className="w-full max-w-xs h-auto object-contain"
                   />
-                  {/* Overlay with name and title */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6">
-                    <div className="text-center">
-                      <p className="text-white font-medium text-lg">Austin Woodruff</p>
-                      <p className="text-white/90 text-sm">Insurance Professional</p>
-                    </div>
-                  </div>
                 </div>
               </div>
               

@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Austin Woodruff Insurance - Insurance Protection You Can Trust",
-  description: "Comprehensive life and health insurance solutions from Austin Woodruff. Serving clients nationwide with personalized coverage and dedicated support.",
-  keywords: ["insurance", "life insurance", "health insurance", "Austin Woodruff", "Austin Woodruff Insurance", "insurance professional", "insurance agent"],
+  title: "Austin Woodruff Insurance - 100% Client Focused Insurance Protection",
+  description: "100% client focused insurance solutions from Austin Woodruff. Comprehensive life and health insurance with personalized coverage and dedicated support. Your trusted insurance professional committed to protecting what matters most.",
+  keywords: ["insurance", "life insurance", "health insurance", "Austin Woodruff", "Austin Woodruff Insurance", "insurance professional", "insurance agent", "client focused"],
   authors: [{ name: "Austin Woodruff" }],
   creator: "Austin Woodruff Insurance",
   publisher: "Austin Woodruff Insurance",
@@ -30,22 +30,22 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://austinwoodruffinsurance.com',
     siteName: 'Austin Woodruff Insurance',
-    title: 'Austin Woodruff Insurance - Insurance Protection You Can Trust',
-    description: 'Comprehensive life and health insurance solutions from Austin Woodruff. Serving clients nationwide with personalized coverage and dedicated support.',
+    title: 'Austin Woodruff Insurance - 100% Client Focused Insurance Protection',
+    description: '100% client focused insurance solutions from Austin Woodruff. Comprehensive life and health insurance with personalized coverage and dedicated support. Your trusted insurance professional committed to protecting what matters most.',
     images: [
       {
         url: '/logoimg.png',
         width: 1200,
         height: 630,
-        alt: 'Austin Woodruff Insurance Logo',
+        alt: 'Austin Woodruff Insurance Logo - 100% Client Focused',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Austin Woodruff Insurance - Insurance Protection You Can Trust',
-    description: 'Comprehensive life and health insurance solutions from Austin Woodruff. Serving clients nationwide with personalized coverage and dedicated support.',
+    title: 'Austin Woodruff Insurance - 100% Client Focused Insurance Protection',
+    description: '100% client focused insurance solutions from Austin Woodruff. Comprehensive life and health insurance with personalized coverage and dedicated support.',
     images: ['/logoimg.png'],
     creator: '@austinwoodruffinsurance',
   },
