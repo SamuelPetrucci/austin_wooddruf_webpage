@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: '100% client focused insurance solutions. Trusted protection for life and health with personalized coverage and dedicated support.',
     images: [
       {
-        url: '/logo.png',
+        url: '/logoimg.png',
         width: 1200,
         height: 630,
         alt: 'Austin Woodruff Insurance Logo',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Austin Woodruff Insurance - Trusted Protection You Can Count On',
     description: '100% client focused insurance solutions. Trusted protection for life and health with personalized coverage.',
-    images: ['/logo.png'],
+    images: ['/logoimg.png'],
     creator: '@austinwoodruffinsurance',
   },
   robots: {
