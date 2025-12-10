@@ -19,14 +19,14 @@ export default function AboutSection() {
           <AnimatedSection delay={200}>
             <div className="space-y-8">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-slate-200 rounded-3xl blur opacity-30" style={{ animation: 'pulse 8s ease-in-out infinite' }}></div>
-                <div className="relative rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden bg-white p-12 flex items-center justify-center min-h-96">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-200 to-slate-200 rounded-2xl blur opacity-20" style={{ animation: 'pulse 8s ease-in-out infinite' }}></div>
+                <div className="relative rounded-xl shadow-md transform hover:scale-105 transition-all duration-500 overflow-hidden bg-white p-8 flex items-center justify-center">
                   <Image
                     src="/logoimg.png"
                     alt="Austin Woodruff Insurance Logo"
-                    width={300}
-                    height={300}
-                    className="w-full max-w-xs h-auto object-contain"
+                    width={180}
+                    height={180}
+                    className="w-auto h-auto object-contain opacity-90"
                   />
                 </div>
               </div>
