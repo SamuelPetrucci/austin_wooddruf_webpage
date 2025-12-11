@@ -1,14 +1,28 @@
 'use client';
 
 import { 
-  CheckCircleIcon,
   CalendarDaysIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import AnimatedSection from '@/components/AnimatedSection';
 
 export default function QuoteAndBookingSection() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup: remove script when component unmounts
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        document.body.removeChild(existingScript);
+      }
+    };
+  }, []);
 
   return (
     <section id="quote" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
@@ -40,37 +54,23 @@ export default function QuoteAndBookingSection() {
         
         <AnimatedSection delay={200}>
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:shadow-3xl transition-all duration-500">
-          <div className="p-8">
+            <div className="p-8">
               <div className="animate-fadeIn">
                 <div className="text-center mb-6">
                   <CalendarDaysIcon className="h-16 w-16 text-blue-800 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">Book Your Consultation</h3>
                   <p className="text-gray-600">
-                    Smart booking system coming soon! In the meantime, please contact us directly to schedule your consultation.
+                    Schedule a free consultation with Austin Woodruff. Choose a time that works best for you.
                   </p>
                 </div>
                 
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <div className="flex items-center justify-center text-blue-800">
-                    <CheckCircleIcon className="h-5 w-5 mr-2" />
-                    <span className="text-sm font-medium">Use the contact options below to schedule your consultation</span>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-blue-50 to-slate-50 rounded-lg shadow-lg p-12 text-center">
-                  <div className="max-w-md mx-auto">
-                    <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
-                      <CalendarDaysIcon className="h-10 w-10 text-blue-800" />
-                    </div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-3">Smart Booking Coming Soon</h4>
-                    <p className="text-gray-600 mb-6">
-                      We&apos;re working on an advanced booking system that will make scheduling your consultation even easier. 
-                      In the meantime, please use the contact options below.
-                    </p>
-                    <div className="bg-white rounded-lg p-4 border-2 border-dashed border-blue-200">
-                      <p className="text-sm text-blue-800 font-medium">🚀 New features launching soon!</p>
-                    </div>
-                  </div>
+                {/* Calendly Embed */}
+                <div className="bg-gray-50 rounded-lg p-4 mb-6 overflow-hidden">
+                  <div
+                    className="calendly-inline-widget"
+                    data-url="https://calendly.com/thebenefitbutler"
+                    style={{ minWidth: '320px', height: '700px' }}
+                  ></div>
                 </div>
                 
                 <div className="mt-6 text-center">
@@ -90,16 +90,8 @@ export default function QuoteAndBookingSection() {
                     </a>
                   </div>
                 </div>
-
-                <div className="mt-6 text-center">
-                  <div className="flex justify-center space-x-2">
-                    <div className="w-2 h-2 bg-blue-800 rounded-full"></div>
-                    <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
-                    <div className="w-2 h-2 bg-gray-300 rounded-full"></div>
-                  </div>
-                </div>
               </div>
-          </div>
+            </div>
           </div>
         </AnimatedSection>
       </div>
