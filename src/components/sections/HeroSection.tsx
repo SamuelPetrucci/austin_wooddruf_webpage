@@ -67,32 +67,32 @@ export default function HeroSection() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 pb-32 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 pb-16 sm:pb-24 lg:pb-32 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           <AnimatedSection delay={0}>
-            <div className="space-y-8">
-              <div className="space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <div className="space-y-6 sm:space-y-8">
+              <div className="space-y-4 sm:space-y-6">
+              <div className="space-y-3 sm:space-y-4">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Protect What Matters Most
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
                   Comprehensive life and health insurance solutions tailored to your unique needs. 
                 Get the protection you deserve with personalized coverage from Austin Woodruff, 
                 your dedicated insurance professional who is 100 percent client focused and committed to finding the right coverage for you.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Link 
                     href="/quote"
-                    className="bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
+                    className="bg-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center text-sm sm:text-base"
                 >
                   Get Your Quick Quote
                   </Link>
                 <button 
                   onClick={() => scrollToSection('quote')}
-                  className="border-2 border-blue-800 text-blue-800 px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+                  className="border-2 border-blue-800 text-blue-800 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base"
                 >
                   Schedule a Meeting
                 </button>
@@ -101,37 +101,37 @@ export default function HeroSection() {
             </div>
           </AnimatedSection>
           <AnimatedSection delay={200}>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* Trusted Protection Card */}
               <div className="relative">
                 {/* Background decoration */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-200/30 to-slate-200/20 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-slate-200/25 to-blue-200/15 rounded-full blur-xl"></div>
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-200/30 to-slate-200/20 rounded-full blur-xl hidden sm:block"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-slate-200/25 to-blue-200/15 rounded-full blur-xl hidden sm:block"></div>
                 
-                <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 transform hover:scale-105 transition-all duration-300 border border-gray-200/50">
-                  <div className="text-center space-y-4">
+                <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 transform hover:scale-105 transition-all duration-300 border border-gray-200/50">
+                  <div className="text-center space-y-3 sm:space-y-4">
             <div className="relative">
-                    <ShieldCheckIcon className="h-12 w-12 text-blue-800 mx-auto" />
+                    <ShieldCheckIcon className="h-10 w-10 sm:h-12 sm:w-12 text-blue-800 mx-auto" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900">Trusted Protection</h3>
-                    <div className="flex justify-center space-x-6">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900">Trusted Protection</h3>
+                    <div className="flex justify-center space-x-4 sm:space-x-6">
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">100%</div>
+                        <div className="text-xl sm:text-2xl font-bold text-blue-800 group-hover:text-blue-900">100%</div>
                         <div className="text-xs text-gray-600">Client Focused</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">24/7</div>
+                        <div className="text-xl sm:text-2xl font-bold text-blue-800 group-hover:text-blue-900">24/7</div>
                         <div className="text-xs text-gray-600">Support Available</div>
                       </div>
                       <div className="text-center transform hover:scale-110 transition-transform duration-300 group">
-                        <div className="text-2xl font-bold text-blue-800 group-hover:text-blue-900">Free</div>
+                        <div className="text-xl sm:text-2xl font-bold text-blue-800 group-hover:text-blue-900">Free</div>
                         <div className="text-xs text-gray-600">Consultations</div>
                       </div>
                     </div>
                     
                     {/* Trust indicators */}
                     <div className="pt-3 border-t border-gray-100">
-                      <div className="flex justify-center items-center space-x-3 text-xs text-gray-500">
+                      <div className="flex flex-col sm:flex-row justify-center items-center space-y-1 sm:space-y-0 sm:space-x-3 text-xs text-gray-500">
                         <div className="flex items-center">
                           <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-1.5"></div>
                           Licensed & Certified
@@ -147,22 +147,22 @@ export default function HeroSection() {
               </div>
 
               {/* Get Your Free Quote Now Card */}
-              <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 border-2 border-blue-200/50 overflow-hidden group">
+              <div className="relative bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 border-2 border-blue-200/50 overflow-hidden group">
                 {/* Background decoration */}
-                <div className="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-br from-blue-200/25 to-slate-200/15 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-2 -left-2 w-20 h-20 bg-gradient-to-tr from-slate-200/20 to-blue-200/10 rounded-full blur-xl"></div>
+                <div className="absolute -top-2 -right-2 w-16 h-16 bg-gradient-to-br from-blue-200/25 to-slate-200/15 rounded-full blur-xl hidden sm:block"></div>
+                <div className="absolute -bottom-2 -left-2 w-20 h-20 bg-gradient-to-tr from-slate-200/20 to-blue-200/10 rounded-full blur-xl hidden sm:block"></div>
                 
-                <div className="relative text-center space-y-4">
-                  <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-800 transition-colors duration-300">Get Your Quick Quote Now!</h3>
-                  <p className="text-gray-600">Complete our simple form in just 2 minutes</p>
+                <div className="relative text-center space-y-3 sm:space-y-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 group-hover:text-blue-800 transition-colors duration-300">Get Your Quick Quote Now!</h3>
+                  <p className="text-sm sm:text-base text-gray-600">Complete our simple form in just 2 minutes</p>
                   <Link 
                     href="/quote"
-                    className="inline-flex items-center justify-center w-full bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="inline-flex items-center justify-center w-full bg-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-sm sm:text-base"
                   >
                     Start Your Quote
                     <ArrowRightIcon className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                   </Link>
-                  <p className="text-sm text-gray-500">✓ No obligation ✓ Free consultation ✓ Personalized results</p>
+                  <p className="text-xs sm:text-sm text-gray-500">✓ No obligation ✓ Free consultation ✓ Personalized results</p>
                 </div>
               </div>
             </div>
