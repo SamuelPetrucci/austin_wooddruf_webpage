@@ -77,10 +77,10 @@ export default function QuoteAndBookingSection() {
                   <p className="text-sm text-gray-600 mb-3">Prefer to call or email directly?</p>
                   <div className="flex justify-center space-x-6">
                     <a 
-                      href="tel:+17272482108"
+                      href="tel:+18133102707"
                       className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
                     >
-                      📞 (727) 248-2108
+                      📞 (813) 310-2707
                     </a>
                     <a 
                       href="mailto:austinryanwoodruff@gmail.com"

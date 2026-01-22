@@ -59,7 +59,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-gray-400">
-              <p>Phone: (727) 248-2108</p>
+              <p>Phone: (813) 310-2707</p>
               <p>Email: austinryanwoodruff@gmail.com</p>
               <p>Service Area: Available Nationwide</p>
             </div>

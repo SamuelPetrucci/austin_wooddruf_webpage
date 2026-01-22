@@ -34,10 +34,10 @@ export default function ContactSection() {
               <p className="text-sm text-gray-600">Prefer to call or email?</p>
               <div className="flex justify-center space-x-4 mt-2">
                 <a 
-                  href="tel:+17272482108"
+                  href="tel:+18133102707"
                   className="text-blue-600 hover:text-blue-800 font-medium"
                 >
-                  📞 (727) 248-2108
+                  📞 (813) 310-2707
                 </a>
                 <a 
                   href="mailto:austinryanwoodruff@gmail.com"
@@ -60,7 +60,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-600">(727) 248-2108</p>
+                    <p className="text-gray-600">(813) 310-2707</p>
                     <p className="text-sm text-gray-500">Available for consultations</p>
                   </div>
                 </div>

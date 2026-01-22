@@ -353,7 +353,7 @@ async function sendCustomerConfirmation(formData: QuoteFormData) {
         
         <p style="color: #374151; margin-bottom: 15px;">If you have any questions in the meantime, please don't hesitate to contact us:</p>
         <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0; border: 1px solid #e2e8f0;">
-          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">📞 Phone:</strong> <a href="tel:+17272482108" style="color: #3b82f6; text-decoration: none;">(727) 248-2108</a></p>
+          <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">📞 Phone:</strong> <a href="tel:+18133102707" style="color: #3b82f6; text-decoration: none;">(813) 310-2707</a></p>
           <p style="margin: 5px 0; color: #374151;"><strong style="color: #1e40af;">✉️ Email:</strong> <a href="mailto:austinryanwoodruff@gmail.com" style="color: #3b82f6; text-decoration: none;">austinryanwoodruff@gmail.com</a></p>
         </div>
         
